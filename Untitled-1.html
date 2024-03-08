@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Tree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            text-align: center;
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        #decision-tree {
+            margin-top: 20px;
+            animation: slideInFromLeft 1s ease-out;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #0015ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1500ff;
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Decision Tree</h1>
+        <div id="decision-tree"></div>
+    </div>
+
+    <script>
+        // Define your decision tree structure here
+        var decisionTree = {
+            question: "Is it raining?",
+            yes: {
+                question: "Do you have an umbrella?",
+                yes: "Take the umbrella",
+                no: "Find shelter"
+            },
+            no: "Enjoy the weather"
+        };
+
+        // Function to recursively render the decision tree
+        function renderDecisionTree(node, element) {
+            if (typeof node === 'string') {
+                var paragraph = document.createElement("p");
+                paragraph.innerHTML = node;
+                paragraph.style.opacity = 0;
+                paragraph.style.animation = "fadeIn 1s ease-out";
+                element.appendChild(paragraph);
+            } else {
+                var question = document.createElement("p");
+                question.innerHTML = node.question;
+                question.style.opacity = 0;
+                question.style.animation = "fadeIn 1s ease-out";
+                element.appendChild(question);
+
+                var yesButton = document.createElement("button");
+                yesButton.innerHTML = "Yes";
+                yesButton.onclick = function () {
+                    renderDecisionTree(node.yes, element);
+                };
+                yesButton.style.opacity = 0;
+                yesButton.style.animation = "fadeIn 1s ease-out";
+                element.appendChild(yesButton);
+
+                var noButton = document.createElement("button");
+                noButton.innerHTML = "No";
+                noButton.onclick = function () {
+                    renderDecisionTree(node.no, element);
+                };
+                noButton.style.opacity = 0;
+                noButton.style.animation = "fadeIn 1s ease-out";
+                element.appendChild(noButton);
+
+                setTimeout(function() {
+                    question.style.opacity = 1;
+                    yesButton.style.opacity = 1;
+                    noButton.style.opacity = 1;
+                }, 10);
+            }
+        }
+
+        // Call the function to render the decision tree
+        var decisionTreeElement = document.getElementById("decision-tree");
+        renderDecisionTree(decisionTree, decisionTreeElement);
+    </script>
+</body>
+</html>
