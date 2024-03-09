@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    margin: 10px;
+    padding: 10px;
+}
+
+#questionElement {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#answerContainer {
+}
+
+.answerButton {
+    font-size: 36px;
+    background-color: white;
+    color: black;
+    border: 5px solid #d0e5f9;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.answerButton:hover {
+    border: 5px solid #15599e;
+}
