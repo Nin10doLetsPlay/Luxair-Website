@@ -80,7 +80,12 @@ function displayQuestion() {
             answerImage.className = "answerImage";
             answerImage.src = answer.image;
             answerButton.classList.add("imageAnswerButton");
-            answerButton.appendChild(answerImage)
+
+            const imageContainer = document.createElement("div");
+            imageContainer.className = "imageContainer";
+            imageContainer.appendChild(answerImage);
+
+            answerButton.appendChild(imageContainer)
         }
 
         const answerText = document.createElement("h2");

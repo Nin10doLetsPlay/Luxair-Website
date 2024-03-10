@@ -83,9 +83,15 @@ html, body {
     height: 380px;
 }
 
-.answerImage {
-    width: 350px;
+.imageContainer {
+    width: 100%;
+    height: calc(100% - 63px);
     margin-bottom: 20px;
+}
+
+.answerImage {
+    height: 100%;
+    width: auto;
 }
 
 .answerText {
