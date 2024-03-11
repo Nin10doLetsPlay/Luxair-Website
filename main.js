@@ -43,6 +43,10 @@ const properties = {
             { text: "Go to a cinema", image: "" },
             { text: "Relax", image: "" }
         ]
+    },
+    budget: {
+        question: "What is your budget?",
+        slider: { min: 0, max: 1000 }
     }
 };
 
@@ -54,48 +58,65 @@ const userAnswers = {};
 let currentQuestion = 0;
 
 function displayQuestion() {
-    const [property, { question, answers }] = Object.entries(properties)[currentQuestion];
+    const [property, { question, answers, slider }] = Object.entries(properties)[currentQuestion];
     questionElement.innerHTML = question;
-    answerContainer.className = answers.length == 3 ? "grid3" : "grid4";
-    for (let [index, answer] of answers.entries()) {
+    if (slider) {
+        const sliderValue = document.createElement("h2");
 
-        const answerButton = document.createElement("button");
-        answerButton.className = "answerButton";
-        answerButton.type = "button";
-        answerButton.onclick = function () {
-            userAnswers[property] = index;
-            for (const element of document.querySelectorAll(".answerButton")) {
-                element.parentElement.removeChild(element);
-            }
-            currentQuestion++;
-            if (currentQuestion < Object.entries(properties).length) {
-                displayQuestion();
-            }
-            else {
-                displayResult();
-            }
+        const sliderElement = document.createElement("input");
+        sliderElement.className = "slider";
+        sliderElement.type = "range";
+        sliderElement.min = slider.min;
+        sliderElement.max = slider.max;
+        sliderElement.oninput = function () {
+            sliderValue.innerHTML = this.value;
         }
 
-        if (answer.image) {
-            const answerImage = document.createElement("img");
-            answerImage.className = "answerImage";
-            answerImage.alt = "Photo of a " + answer.text.toLowerCase() + " travel destination";
-            answerImage.src = answer.image;
-            answerButton.classList.add("imageAnswerButton");
+        answerContainer.appendChild(sliderElement);
+        answerContainer.appendChild(sliderValue);
+    }
+    else if (answers) {
+        answerContainer.className = answers.length == 3 ? "grid3" : "grid4";
+        for (let [index, answer] of answers.entries()) {
 
-            const imageContainer = document.createElement("div");
-            imageContainer.className = "imageContainer";
-            imageContainer.appendChild(answerImage);
+            const answerButton = document.createElement("button");
+            answerButton.className = "answerButton";
+            answerButton.type = "button";
+            answerButton.onclick = function () {
+                userAnswers[property] = index;
+                for (const element of document.querySelectorAll(".answerButton")) {
+                    element.parentElement.removeChild(element);
+                }
+                currentQuestion++;
+                if (currentQuestion < Object.entries(properties).length) {
+                    displayQuestion();
+                }
+                else {
+                    displayResult();
+                }
+            }
 
-            answerButton.appendChild(imageContainer)
+            if (answer.image) {
+                const answerImage = document.createElement("img");
+                answerImage.className = "answerImage";
+                answerImage.alt = "Photo of a " + answer.text.toLowerCase() + " travel destination";
+                answerImage.src = answer.image;
+                answerButton.classList.add("imageAnswerButton");
+
+                const imageContainer = document.createElement("div");
+                imageContainer.className = "imageContainer";
+                imageContainer.appendChild(answerImage);
+
+                answerButton.appendChild(imageContainer)
+            }
+
+            const answerText = document.createElement("h2");
+            answerText.className = "answerText";
+            answerText.innerHTML = answer.text;
+            answerButton.appendChild(answerText);
+
+            answerContainer.appendChild(answerButton);
         }
-
-        const answerText = document.createElement("h2");
-        answerText.className = "answerText";
-        answerText.innerHTML = answer.text;
-        answerButton.appendChild(answerText);
-
-        answerContainer.appendChild(answerButton);
     }
 }
 
