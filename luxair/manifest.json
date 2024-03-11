@@ -1,0 +1,16 @@
+{
+	"icons": [
+		{
+			"src": "/logo-luxair-wing.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}
+	],
+	"prefer_related_applications": true,
+	"related_applications": [
+		{
+			"platform": "play",
+			"id": "com.luxair.androidapp"
+		}
+	]
+}

@@ -78,6 +78,7 @@ function displayQuestion() {
         if (answer.image) {
             const answerImage = document.createElement("img");
             answerImage.className = "answerImage";
+            answerImage.alt = answer.text;
             answerImage.src = answer.image;
             answerButton.classList.add("imageAnswerButton");
 
