@@ -20,10 +20,10 @@ const properties = {
     place: {
         question: "Where would you like to go?",
         answers: [
-            { text: "City", image: "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/09/1dd23cc06c31c31ba7df72f2c74db5bc.jpg?width=550&height=315&mode=crop" },
-            { text: "Beach", image: "https://www.luxairtours.lu/sites/default/files/styles/slide_image_xs_1px_480px_/public/2022-08/HDF_iStock-508035252_WEB%203%20-%20Big%20Teaser%20Image.jpg?itok=8iQdkiA6" },
-            { text: "Mountain", image: "images/mountains.jpg" },
-            { text: "Forest", image: "images/forest.jpg" }
+            { text: "City", image: "images/city.webp" },
+            { text: "Beach", image: "images/beach.webp" },
+            { text: "Mountain", image: "images/mountains.webp" },
+            { text: "Forest", image: "images/forest.webp" }
         ]
     },
     people: {
@@ -79,7 +79,7 @@ function displayQuestion() {
         if (answer.image) {
             const answerImage = document.createElement("img");
             answerImage.className = "answerImage";
-            answerImage.alt = answer.text;
+            answerImage.alt = "Photo of a " + answer.text.toLowerCase() + " travel destination";
             answerImage.src = answer.image;
             answerButton.classList.add("imageAnswerButton");
 
