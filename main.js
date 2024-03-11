@@ -61,6 +61,7 @@ function displayQuestion() {
 
         const answerButton = document.createElement("button");
         answerButton.className = "answerButton";
+        answerButton.type = "button";
         answerButton.onclick = function () {
             userAnswers[property] = index;
             for (const element of document.querySelectorAll(".answerButton")) {
