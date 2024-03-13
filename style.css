@@ -26,37 +26,42 @@ html, body {
 }
 
 #answerContainer {
-	display: grid;
 	margin: 40px;
+}
+
+#buttonContainer {
+	height: 100%;
+	width: 100%;
+	display: grid;
 	gap: 40px;
 }
 
 @media (max-width: 919px) {
-	#answerContainer.grid4 {
+	#buttonContainer.grid4 {
 		grid-template-columns: 1fr;
 	}
 }
 
 @media (min-width: 920px) and (max-width: 1799px) {
-	#answerContainer.grid4 {
+	#buttonContainer.grid4 {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media (min-width: 1800px) {
-	#answerContainer.grid4 {
+	#buttonContainer.grid4 {
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
 @media (max-width: 1359px) {
-	#answerContainer.grid3 {
+	#buttonContainer.grid3 {
 		grid-template-columns: 1fr;
 	}
 }
 
 @media (min-width: 1360px) {
-	#answerContainer.grid3 {
+	#buttonContainer.grid3 {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
@@ -85,6 +90,7 @@ html, body {
 	width: 100%;
 	height: calc(100% - 63px);
 	margin-bottom: 20px;
+	overflow: hidden;
 }
 
 .answerImage {

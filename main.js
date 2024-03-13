@@ -17,6 +17,13 @@ const hotels = [
 ];
 
 const properties = {
+    type: {
+        question: "What are you looking for?",
+        answers: [
+            { text: "Destination", image: "" },
+            { text: "Hotel", image: "" }
+        ]
+    },
     place: {
         question: "Where would you like to go?",
         answers: [
@@ -46,7 +53,7 @@ const properties = {
     },
     budget: {
         question: "What is your budget?",
-        slider: { min: 0, max: 1000 }
+        slider: { min: 0, max: 8050, step: 50 }
     }
 };
 
@@ -69,14 +76,18 @@ function displayQuestion() {
         sliderElement.min = slider.min;
         sliderElement.max = slider.max;
         sliderElement.oninput = function () {
-            sliderValue.innerHTML = this.value;
+            sliderValue.innerHTML = this.value == 8050 ? "No limit" : Math.floor(this.value / slider.step) * slider.step;
         }
 
         answerContainer.appendChild(sliderElement);
         answerContainer.appendChild(sliderValue);
     }
     else if (answers) {
-        answerContainer.className = answers.length == 3 ? "grid3" : "grid4";
+        const buttonContainer = document.createElement("div");
+        buttonContainer.id = "buttonContainer"
+        buttonContainer.className = answers.length == 3 ? "grid3" : "grid4";
+        answerContainer.appendChild(buttonContainer);
+
         for (let [index, answer] of answers.entries()) {
 
             const answerButton = document.createElement("button");
@@ -115,7 +126,7 @@ function displayQuestion() {
             answerText.innerHTML = answer.text;
             answerButton.appendChild(answerText);
 
-            answerContainer.appendChild(answerButton);
+            buttonContainer.appendChild(answerButton);
         }
     }
 }
