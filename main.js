@@ -1,30 +1,35 @@
 const hotels = [
     {
-        name: "Test hotel or destination in a city for people alone. Price: 3999 Euro",
-        rating: 0,
-        type: [0, 1],
-        place: [0],
-        people: [0],
-        activities: [0, 1, 3],
-        price: 3999
+        name: "Destination in a beach with a forest. Price: 999 Euro",
+        type: [0],
+        place: [1, 3],
+        people: [0, 1, 2, 3],
+        activities: [0, 1, 2, 3],
+        price: 999
     },
     {
-        name: "Test destination in a city with beach. Price: 6299 Euro",
-        rating: 0,
+        name: "Destination in a city near mountains. Maximum 2 people. Price: 1999 Euro",
         type: [0],
+        place: [0, 2],
+        people: [0, 1],
+        activities: [0, 1, 2, 3],
+        price: 1999
+    },
+    {
+        name: "Hotel in the mountains with forest. Price: 2999 Euro",
+        type: [1],
+        place: [2, 3],
+        people: [0, 1, 2, 3],
+        activities: [0, 1, 2, 3],
+        price: 2999
+    },
+    {
+        name: "Hotel in a city with a beach. Price: 3999 Euro",
+        type: [1],
         place: [0, 1],
         people: [0, 1, 2, 3],
-        activities: [1, 2, 3],
-        price: 6299
-    },
-    {
-        name: "Test hotel in the mountains. Maximum 2 people. Price: 1599 Euro",
-        rating: 0,
-        type: [1],
-        place: [2],
-        people: [0, 1],
-        activities: [0, 2, 3],
-        price: 1599
+        activities: [0, 1, 2, 3],
+        price: 3999
     }
 ];
 
@@ -91,9 +96,12 @@ function displayQuestion() {
             sliderValue.innerHTML = this.value == 8050 ? "No limit" : Math.floor(this.value / slider.step) * slider.step;
         }
 
+        const buttonText = document.createElement("h2");
+        buttonText.innerHTML = "Submit";
+
         const submitButton = document.createElement("button");
         submitButton.type = "button";
-        submitButton.innerHTML = "Submit";
+        submitButton.appendChild(buttonText);
         submitButton.onclick = function () {
             userAnswers[property] = sliderElement.value == 8050 ? 999999 : Math.floor(sliderElement.value / slider.step) * slider.step;
             sliderElement.parentElement.removeChild(sliderElement);
@@ -163,13 +171,13 @@ function displayResult() {
     questionElement.parentElement.removeChild(questionElement);
     answerContainer.parentElement.removeChild(answerContainer);
     for (const hotel of hotels) {
+        hotel.rating = 0;
         for (const [property, userAnswer] of Object.entries(userAnswers)) {
             if (properties[property].slider) {
                 hotel.rating += Math.max(0, 1 - Math.abs(1 - userAnswer / hotel[property]));
             }
             else if (hotel[property].includes(userAnswer)) {
                 hotel.rating++;
-                console.log("Property");
             }
         }
     }
