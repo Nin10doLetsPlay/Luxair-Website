@@ -165,7 +165,7 @@ function displayResult() {
     for (const hotel of hotels) {
         for (const [property, userAnswer] of Object.entries(userAnswers)) {
             if (properties[property].slider) {
-                hotel.rating += 1 - Math.abs(1 - userAnswer / hotel[property]);
+                hotel.rating += Math.max(0, 1 - Math.abs(1 - userAnswer / hotel[property]));
             }
             else if (hotel[property].includes(userAnswer)) {
                 hotel.rating++;
