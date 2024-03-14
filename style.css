@@ -69,7 +69,7 @@ html, body {
 .answerButton {
 	vertical-align: top;
 	background-color: white;
-	border: 5px solid #d0e5f9;
+	border: 5px solid #c6eaf9;
 	border-radius: 5px;
 	padding: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -79,7 +79,7 @@ html, body {
 
 .answerButton:hover {
 	transform: scale(1.04);
-	border: 5px solid #15599e;
+	border: 5px solid #0090b8;
 }
 
 .imageAnswerButton {
@@ -119,7 +119,7 @@ html, body {
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background: #15599e;
+	background: #0090b8;
 	cursor: pointer;
 }
 
@@ -127,6 +127,6 @@ html, body {
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background: #15599e;
+	background: #0090b8;
 	cursor: pointer;
 }

@@ -1,18 +1,30 @@
 const hotels = [
     {
+        name: "Test hotel or destination in a city for people alone. Price: 3999 Euro",
+        rating: 0,
+        type: [0, 1],
         place: [0],
         people: [0],
-        activities: [0, 3]
+        activities: [0, 1, 3],
+        price: 3999
     },
     {
+        name: "Test destination in a city with beach. Price: 6299 Euro",
+        rating: 0,
+        type: [0],
         place: [0, 1],
         people: [0, 1, 2, 3],
-        activities: [1, 2, 3]
+        activities: [1, 2, 3],
+        price: 6299
     },
     {
+        name: "Test hotel in the mountains. Maximum 2 people. Price: 1599 Euro",
+        rating: 0,
+        type: [1],
         place: [2],
         people: [0, 1],
-        activities: [0, 2]
+        activities: [0, 2, 3],
+        price: 1599
     }
 ];
 
@@ -51,7 +63,7 @@ const properties = {
             { text: "Relax", image: "" }
         ]
     },
-    budget: {
+    price: {
         question: "What is your budget?",
         slider: { min: 0, max: 8050, step: 50 }
     }
@@ -79,8 +91,26 @@ function displayQuestion() {
             sliderValue.innerHTML = this.value == 8050 ? "No limit" : Math.floor(this.value / slider.step) * slider.step;
         }
 
+        const submitButton = document.createElement("button");
+        submitButton.type = "button";
+        submitButton.innerHTML = "Submit";
+        submitButton.onclick = function () {
+            userAnswers[property] = sliderElement.value == 8050 ? 999999 : Math.floor(sliderElement.value / slider.step) * slider.step;
+            sliderElement.parentElement.removeChild(sliderElement);
+            sliderValue.parentElement.removeChild(sliderValue);
+            submitButton.parentElement.removeChild(submitButton);
+            currentQuestion++;
+            if (currentQuestion < Object.entries(properties).length) {
+                displayQuestion();
+            }
+            else {
+                displayResult();
+            }
+        }
+
         answerContainer.appendChild(sliderElement);
         answerContainer.appendChild(sliderValue);
+        answerContainer.appendChild(submitButton);
     }
     else if (answers) {
         const buttonContainer = document.createElement("div");
@@ -95,9 +125,7 @@ function displayQuestion() {
             answerButton.type = "button";
             answerButton.onclick = function () {
                 userAnswers[property] = index;
-                for (const element of document.querySelectorAll(".answerButton")) {
-                    element.parentElement.removeChild(element);
-                }
+                buttonContainer.parentElement.removeChild(buttonContainer);
                 currentQuestion++;
                 if (currentQuestion < Object.entries(properties).length) {
                     displayQuestion();
@@ -134,7 +162,21 @@ function displayQuestion() {
 function displayResult() {
     questionElement.parentElement.removeChild(questionElement);
     answerContainer.parentElement.removeChild(answerContainer);
-    alert(JSON.stringify(userAnswers));
+    for (const hotel of hotels) {
+        for (const [property, userAnswer] of Object.entries(userAnswers)) {
+            if (properties[property].slider) {
+                hotel.rating += 1 - Math.abs(1 - userAnswer / hotel[property]);
+            }
+            else if (hotel[property].includes(userAnswer)) {
+                hotel.rating++;
+                console.log("Property");
+            }
+        }
+    }
+    const sortedHotels = hotels.sort((a, b) => b.rating - a.rating);
+    const output = document.createElement("h2");
+    output.innerHTML = sortedHotels[0].name;
+    document.getElementById("content").appendChild(output);
 }
 
 displayQuestion();
