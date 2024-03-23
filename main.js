@@ -1,30 +1,31 @@
 const hotels = [
     {
-        name: "Destination in a beach with a forest. Price: 999 Euro",
+        title: "Test_Hotel_1",
+        description: "Destination in a beach with a forest. Price: 999 Euro",
+        image: "https://www.gliddenlodge.com/wp-content/uploads/2018/09/door-county-beach.jpg",
+        url: "about:blank",
         type: [0],
-        place: [1, 3],
+        place: [1],
         people: [0, 1, 2, 3],
         activities: [0, 1, 2, 3],
         price: 999
     },
     {
-        name: "Destination in a city near mountains. Maximum 2 people. Price: 1999 Euro",
+        title: "Test_Hotel_2",
+        description: "Destination in a city near mountains. Maximum 2 people. Price: 1999 Euro",
+        image: "https://images7.alphacoders.com/112/1120507.jpg",
+        url: "about:blank",
         type: [0],
-        place: [0, 2],
-        people: [0, 1],
+        place: [0],
+        people: [0, 1, 2, 3],
         activities: [0, 1, 2, 3],
         price: 1999
     },
     {
-        name: "Hotel in the mountains with forest. Price: 2999 Euro",
-        type: [1],
-        place: [2, 3],
-        people: [0, 1, 2, 3],
-        activities: [0, 1, 2, 3],
-        price: 2999
-    },
-    {
-        name: "Hotel in a city with a beach. Price: 3999 Euro",
+        title: "Test_Hotel_3",
+        description: "Hotel in a city with a beach. Price: 3999 Euro",
+        image: "https://www.touropia.com/gfx/b/2009/03/jumeirah_beach.jpg",
+        url: "about:blank",
         type: [1],
         place: [0, 1],
         people: [0, 1, 2, 3],
@@ -37,17 +38,15 @@ const properties = {
     type: {
         question: "What are you looking for?",
         answers: [
-            { text: "Destination", image: "" },
-            { text: "Hotel", image: "" }
+            { text: "Destination with hotel", image: "images/luxairtours.png" },
+            { text: "Just a destination", image: "images/luxair.png" }
         ]
     },
     place: {
         question: "Where would you like to go?",
         answers: [
             { text: "City", image: "images/city.webp" },
-            { text: "Beach", image: "images/beach.webp" },
-            { text: "Mountain", image: "images/mountains.webp" },
-            { text: "Forest", image: "images/forest.webp" }
+            { text: "Beach", image: "images/beach.webp" }
         ]
     },
     people: {
@@ -74,6 +73,7 @@ const properties = {
     }
 };
 
+const content = document.getElementById("content");
 const answerContainer = document.getElementById("answerContainer");
 const questionElement = document.getElementById("questionElement");
 
@@ -86,6 +86,7 @@ function displayQuestion() {
     questionElement.innerHTML = question;
     if (slider) {
         const sliderValue = document.createElement("h2");
+        sliderValue.innerHTML = "0";
 
         const sliderElement = document.createElement("input");
         sliderElement.className = "slider";
@@ -181,10 +182,35 @@ function displayResult() {
             }
         }
     }
-    const sortedHotels = hotels.sort((a, b) => b.rating - a.rating);
-    const output = document.createElement("h2");
-    output.innerHTML = sortedHotels[0].name;
-    document.getElementById("content").appendChild(output);
+    const sortedResults = hotels.sort((a, b) => b.rating - a.rating);
+
+    for (const result of sortedResults) {
+
+        const resultLink = document.createElement("a");
+        resultLink.href = result.url;
+        content.appendChild(resultLink);
+
+        const resultContainer = document.createElement("div");
+        resultContainer.className = "resultContainer";
+        resultLink.appendChild(resultContainer);
+
+        const resultImage = document.createElement("img");
+        resultImage.className = "resultImage";
+        resultImage.src = result.image;
+        resultContainer.appendChild(resultImage);
+
+        const resultText = document.createElement("div");
+        resultText.className = "resultText";
+        resultContainer.appendChild(resultText);
+
+        const resultTitle = document.createElement("h2");
+        resultTitle.innerHTML = result.title;
+        resultText.appendChild(resultTitle);
+
+        const resultDescription = document.createElement("p");
+        resultDescription.innerHTML = result.description;
+        resultText.appendChild(resultDescription);
+    }
 }
 
 displayQuestion();
