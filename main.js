@@ -10,97 +10,44 @@ async function get(url) {
     }
 }
 
-const { destinations } = await get("https://www.luxairtours.lu/luxair_destinations_overview");
-const data = [];
-for (const [key, destination] of Object.entries(destinations)) {
-    data.push({
-        id: destination.field_airport,
-        country: destination.field_country.title.en,
-        place: destination.title.en,
-        categories: []
-    });
-    for (const category of destination.field_arrival_guide_destination.raw.Categories.en.Category) {
-        data[data.length - 1].categories.push({
-            id: category.Id,
-            name: category.Name
-        });
-    }
-}
-console.log(JSON.stringify(data));
-
-
-const hotels = [
-    {
-        title: "Test_Hotel_1",
-        description: "Destination in a beach with a forest. Price: 999 Euro",
-        image: "https://www.gliddenlodge.com/wp-content/uploads/2018/09/door-county-beach.jpg",
-        url: "about:blank",
-        type: [0],
-        place: [1],
-        people: [0, 1, 2, 3],
-        activities: [0, 1, 2, 3],
-        price: 999
-    },
-    {
-        title: "Test_Hotel_2",
-        description: "Destination in a city near mountains. Maximum 2 people. Price: 1999 Euro",
-        image: "https://images7.alphacoders.com/112/1120507.jpg",
-        url: "about:blank",
-        type: [0],
-        place: [0],
-        people: [0, 1, 2, 3],
-        activities: [0, 1, 2, 3],
-        price: 1999
-    },
-    {
-        title: "Test_Hotel_3",
-        description: "Hotel in a city with a beach. Price: 3999 Euro",
-        image: "https://www.touropia.com/gfx/b/2009/03/jumeirah_beach.jpg",
-        url: "about:blank",
-        type: [1],
-        place: [0, 1],
-        people: [0, 1, 2, 3],
-        activities: [0, 1, 2, 3],
-        price: 3999
-    }
-];
-
 const properties = {
     type: {
+        type: "answers",
         question: "What are you looking for?",
         answers: [
-            { text: "Destination with hotel", image: "images/luxairtours.png" },
-            { text: "Just a destination", image: "images/luxair.png" }
+            { id: "hotel", text: "Destination with hotel", image: "images/luxairtours.png" },
+            { id: "destination", text: "Just a destination", image: "images/luxair.png" }
         ]
     },
     place: {
+        type: "answers",
         question: "Where would you like to go?",
         answers: [
-            { text: "City", image: "images/city.webp" },
-            { text: "Beach", image: "images/beach.webp" }
+            { id: "city", text: "City", image: "images/city.webp" },
+            { id: "beach", text: "Beach", image: "images/beach.webp" }
         ]
     },
-    people: {
-        question: "Who are you traveling with?",
-        answers: [
-            { text: "Alone", image: "" },
-            { text: "With another person", image: "" },
-            { text: "With my family", image: "" },
-            { text: "With friends", image: "" }
-        ]
+    kids: {
+        type: "boolean",
+        question: "Are you traveling with kids?"
     },
     activities: {
+        type: "answers",
         question: "What would you like to do?",
         answers: [
-            { text: "Visit a museum", image: "" },
-            { text: "Visit a Zoo", image: "" },
-            { text: "Go to a cinema", image: "" },
-            { text: "Relax", image: "" }
+            { id: "shopping", text: "Go shopping", image: "" },
+            { id: "culture", text: "Discover the culture", image: "" },
+            { id: "historical", text: "Visit a historical museum", image: "" },
+            { id: "relax", text: "Just relax", image: "" }
         ]
     },
     price: {
+        type: "slider",
         question: "What is your budget?",
-        slider: { min: 0, max: 8050, step: 50 }
+        min: 0,
+        max: 2050,
+        step: 50,
+        range: 1000
     }
 };
 
@@ -113,19 +60,19 @@ const userAnswers = {};
 let currentQuestion = 0;
 
 function displayQuestion() {
-    const [property, { question, answers, slider }] = Object.entries(properties)[currentQuestion];
-    questionElement.innerHTML = question;
-    if (slider) {
+    const [key, property] = Object.entries(properties)[currentQuestion];
+    questionElement.innerHTML = property.question;
+    if (property.type == "slider") {
         const sliderValue = document.createElement("h2");
         sliderValue.innerHTML = "0";
 
         const sliderElement = document.createElement("input");
         sliderElement.className = "slider";
         sliderElement.type = "range";
-        sliderElement.min = slider.min;
-        sliderElement.max = slider.max;
+        sliderElement.min = property.min;
+        sliderElement.max = property.max;
         sliderElement.oninput = function () {
-            sliderValue.innerHTML = this.value == 8050 ? "No limit" : Math.floor(this.value / slider.step) * slider.step;
+            sliderValue.innerHTML = this.value == property.max ? "No limit" : Math.floor(this.value / property.step) * property.step;
         }
 
         const buttonText = document.createElement("h2");
@@ -135,7 +82,7 @@ function displayQuestion() {
         submitButton.type = "button";
         submitButton.appendChild(buttonText);
         submitButton.onclick = function () {
-            userAnswers[property] = sliderElement.value == 8050 ? 999999 : Math.floor(sliderElement.value / slider.step) * slider.step;
+            userAnswers[key] = sliderElement.value == 8050 ? 999999 : Math.floor(sliderElement.value / property.step) * property.step;
             sliderElement.parentElement.removeChild(sliderElement);
             sliderValue.parentElement.removeChild(sliderValue);
             submitButton.parentElement.removeChild(submitButton);
@@ -152,19 +99,19 @@ function displayQuestion() {
         answerContainer.appendChild(sliderValue);
         answerContainer.appendChild(submitButton);
     }
-    else if (answers) {
+    else if (property.type == "answers") {
         const buttonContainer = document.createElement("div");
         buttonContainer.id = "buttonContainer"
-        buttonContainer.className = answers.length == 3 ? "grid3" : "grid4";
+        buttonContainer.className = property.answers.length == 3 ? "grid3" : "grid4";
         answerContainer.appendChild(buttonContainer);
 
-        for (let [index, answer] of answers.entries()) {
+        for (const answer of property.answers) {
 
             const answerButton = document.createElement("button");
             answerButton.className = "answerButton";
             answerButton.type = "button";
             answerButton.onclick = function () {
-                userAnswers[property] = index;
+                userAnswers[key] = answer.id;
                 buttonContainer.parentElement.removeChild(buttonContainer);
                 currentQuestion++;
                 if (currentQuestion < Object.entries(properties).length) {
@@ -178,7 +125,7 @@ function displayQuestion() {
             if (answer.image) {
                 const answerImage = document.createElement("img");
                 answerImage.className = "answerImage";
-                answerImage.alt = "Photo of a " + answer.text.toLowerCase() + " travel destination";
+                answerImage.alt = answer.text;
                 answerImage.src = answer.image;
                 answerButton.classList.add("imageAnswerButton");
 
@@ -197,28 +144,65 @@ function displayQuestion() {
             buttonContainer.appendChild(answerButton);
         }
     }
+    else if (property.type == "boolean") {
+
+        const buttonContainer = document.createElement("div");
+        buttonContainer.id = "buttonContainer"
+        buttonContainer.className = "grid4";
+        answerContainer.appendChild(buttonContainer);
+
+        for (let i = 0; i < 2; i++) {
+
+            const answerButton = document.createElement("button");
+            answerButton.className = "answerButton";
+            answerButton.type = "button";
+            answerButton.onclick = function () {
+                userAnswers[key] = i == 0;
+                buttonContainer.parentElement.removeChild(buttonContainer);
+                currentQuestion++;
+                if (currentQuestion < Object.entries(properties).length) {
+                    displayQuestion();
+                }
+                else {
+                    displayResult();
+                }
+            }
+
+            const answerText = document.createElement("h2");
+            answerText.className = "answerText";
+            answerText.innerHTML = i == 0 ? "Yes" : "No";
+            answerButton.appendChild(answerText);
+
+            buttonContainer.appendChild(answerButton);
+        }
+    }
 }
 
-function displayResult() {
+async function displayResult() {
     questionElement.parentElement.removeChild(questionElement);
     answerContainer.parentElement.removeChild(answerContainer);
-    for (const hotel of hotels) {
-        hotel.rating = 0;
+    const results = userAnswers["type"] == "hotel" ? await get("test_hotels.json") : await get("destinations.json");
+    for (const result of results) {
+        result.rating = 0;
         for (const [property, userAnswer] of Object.entries(userAnswers)) {
-            if (properties[property].slider) {
-                hotel.rating += Math.max(0, 1 - Math.abs(1 - userAnswer / hotel[property]));
+            if (property == "type") continue;
+            if (properties[property].type == "slider") {
+                result.rating += Math.max(0, 1 - (Math.abs(userAnswer - result[property]) / properties[property].range));
             }
-            else if (hotel[property].includes(userAnswer)) {
-                hotel.rating++;
+            else if (properties[property].type == "answers") {
+                if (result[property][userAnswer] == true) result.rating++;
+            }
+            else if (properties[property].type == "boolean") {
+                if (!(userAnswer == true && result[property] == false)) result.rating++;
             }
         }
     }
-    const sortedResults = hotels.sort((a, b) => b.rating - a.rating);
+    const sortedResults = results.sort((a, b) => b.rating - a.rating);
 
-    for (const result of sortedResults) {
+    for (const sortedResult of sortedResults) {
 
         const resultLink = document.createElement("a");
-        resultLink.href = result.url;
+        resultLink.href = sortedResult.url;
         content.appendChild(resultLink);
 
         const resultContainer = document.createElement("div");
@@ -227,7 +211,7 @@ function displayResult() {
 
         const resultImage = document.createElement("img");
         resultImage.className = "resultImage";
-        resultImage.src = result.image;
+        resultImage.src = sortedResult.image;
         resultContainer.appendChild(resultImage);
 
         const resultText = document.createElement("div");
@@ -235,11 +219,11 @@ function displayResult() {
         resultContainer.appendChild(resultText);
 
         const resultTitle = document.createElement("h2");
-        resultTitle.innerHTML = result.title;
+        resultTitle.innerHTML = sortedResult.region + " - " + sortedResult.country;
         resultText.appendChild(resultTitle);
 
         const resultDescription = document.createElement("p");
-        resultDescription.innerHTML = result.description;
+        resultDescription.innerHTML = "Price: " + sortedResult.price + "€<br>Recommendation: " + Math.round(sortedResult.rating / Object.entries(userAnswers).length * 100) + "%";
         resultText.appendChild(resultDescription);
     }
 }

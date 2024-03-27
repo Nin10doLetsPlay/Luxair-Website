@@ -1,0 +1,819 @@
+[
+	{
+		"price": 380,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/04/857160cd9ac41759a7b7bb41653a1feb.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Mindelo is a port town on the Cape Verde in the northern part of the island Sao Vicente",
+		"url": "https://www.luxairtours.lu/en/destinations/boa-vista",
+		"country": "Cape Verde",
+		"region": "Boa Vista",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 245,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/10/ba24253d8a7a04e55a8339419fd11907.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Beautiful beach and boat in Paleokastritsa, Corfu island, Greece",
+		"url": "https://www.luxairtours.lu/en/destinations/corfu",
+		"country": "Greece",
+		"region": "Corfu",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 340,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/01/1fe3fd72bd485208ec9a387a28ed4e84.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "The main port of Kos island in Greece. HDR processed",
+		"url": "https://www.luxairtours.lu/en/destinations/kos",
+		"country": "Greece",
+		"region": "Kos",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 405,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/04/8b89fd6c3b50d1c6bd9ed2505bfdb550.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Old pedestrian square in Rhodes",
+		"url": "https://www.luxairtours.lu/en/destinations/rhodes",
+		"country": "Greece",
+		"region": "Rhodes",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 437,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/04/498f132b253ead38618f89b0f6fe4d8f.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Chania",
+		"url": "https://www.luxairtours.lu/en/destinations/crete",
+		"country": "Greece",
+		"region": "Crete",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 138,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/02/2924926b90cb69f54d4215e5433646c5.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "mother and child at the beach",
+		"url": "https://www.luxairtours.lu/en/destinations/rimini",
+		"country": "Italy",
+		"region": "Rimini",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 119,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/08/4e6cf25ca9b1b9c1e1050ab55f426d04.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Clothes hanging outside houses in Naples, Italy",
+		"url": "https://www.luxairtours.lu/en/destinations/naples",
+		"country": "Italy",
+		"region": "Naples",
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 169,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/08/48e042694dc4424733fd6e1f5ce46ae7.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Old Norman's Castle, and Medieval City, Lamezia Terme, Calabria, Italy",
+		"url": "https://www.luxairtours.lu/en/destinations/lamezia-terme",
+		"country": "Italy",
+		"region": "Lamezia Terme",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 158,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/04/4a25b9d5c8d06189492aa4ff60c72cb9.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Street in the Old Town of Bari, Italy.",
+		"url": "https://www.luxairtours.lu/en/destinations/bari-brindisi",
+		"country": "Italy",
+		"region": "Bari, Brindisi",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": true,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 178,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/17/108929af1401cdf11a321f1bbdddec06.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Aerial panoramic view at famous european travel destination, Dubrovnik cityscape on Adriatic Coast, Croatia. / Selective focus.",
+		"url": "https://www.luxairtours.lu/en/destinations/dubrovnik",
+		"country": "Croatia",
+		"region": "Dubrovnik",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 198,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/15/77ad5de2bed02477661965e9665d9aa2.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "aerial view of the Old Town in Zadar",
+		"url": "https://www.luxairtours.lu/en/destinations/zadar",
+		"country": "Croatia",
+		"region": "Zadar",
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": true,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 90,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/06/6f1eb6d44f2a39ba9c3c7b763fc4823f.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Old fisherman village in Marsaxlokk, Malta",
+		"url": "https://www.luxairtours.lu/en/destinations/malta",
+		"country": "Malta",
+		"region": "Malta",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": true,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 195,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/09/941f03542127319c1c186098f627583a.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "",
+		"url": "https://www.luxairtours.lu/en/destinations/agadir",
+		"country": "Morocco",
+		"region": "Agadir",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 150,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/15/3608942d0e698eabde05151befcfecff.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Marrakesh, Morocco",
+		"url": "https://www.luxairtours.lu/en/destinations/marrakech",
+		"country": "Morocco",
+		"region": "Marrakech",
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"kids": false,
+		"activities": {
+			"shopping": true,
+			"culture": true,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 79,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/14/211c3f12dcf4397166f2c7d4a64ae683.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Beautiful sunset view over Faro town in Portugal",
+		"url": "https://www.luxairtours.lu/en/destinations/faro",
+		"country": "Portugal",
+		"region": "Faro",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 99,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/01/1f078766b8eaa91de1157bf65b2e61f3.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "tram on the street of Lisbon",
+		"url": "https://www.luxairtours.lu/en/destinations/lisbon-coast",
+		"country": "Portugal",
+		"region": "Lisbon Coast",
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"kids": false,
+		"activities": {
+			"shopping": true,
+			"culture": true,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 294,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/13/16173c4a76233ca2184b4482cc32ebb9.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Funchal sunset",
+		"url": "https://www.luxairtours.lu/en/destinations/madeira-funchal",
+		"country": "Portugal",
+		"region": "Madeira - Funchal ",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 90,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/17/97b7f8a373d60b074fa497e9e72c53cb.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Malaga",
+		"url": "https://www.luxairtours.lu/en/destinations/malaga-costa-del-sol",
+		"country": "Spain",
+		"region": "Malaga - Costa del Sol",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 262,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/04/dca160f76d6dfed184ac5fbd37d00ae4.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "view on the Cathedral in Jerez",
+		"url": "https://www.luxairtours.lu/en/destinations/jerez-costa-de-la-luz",
+		"country": "Spain",
+		"region": "Jerez - Costa de la Luz",
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": true,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 119,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/09/9fcbbf058b266b82d4310b5bf6a9f792.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Medieval moorish fortress Alcazaba in Almeria, Access to the fortress with gardens and trees of different species, panoramic view of the city, take in Almeria, Andalusia, Spain",
+		"url": "https://www.luxairtours.lu/en/destinations/costa-de-almeria",
+		"country": "Spain",
+		"region": "Costa de Almería",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 80,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/10/6e0031a94d1ac497070e6f70d960c610.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "View of the beach of Port de Soller with people lying on sand and the old buildings visible in background, Soller, Balearic islands, Spain.",
+		"url": "https://www.luxairtours.lu/en/destinations/mallorca",
+		"country": "Spain - Balearic Islands",
+		"region": "Mallorca",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 263,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/09/538cb7381e15b86242a30332812bbb11.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Cala d'Hort Beach at sunset. Balearic Islands. Ibiza",
+		"url": "https://www.luxairtours.lu/en/destinations/ibiza",
+		"country": "Spain - Balearic Islands",
+		"region": "Ibiza",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": false
+		}
+	},
+	{
+		"price": 289,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/18/6c4745140efb809dd6222d4fb85aef09.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Fuerteventura, Gran Canaria, Spain",
+		"url": "https://www.luxairtours.lu/en/destinations/fuerteventura",
+		"country": "Spain - Canary Islands",
+		"region": "Fuerteventura",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 289,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/18/20e9ed2dddb95c0da1c43b67daa4b4a8.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "El Confital beach-Las Palmas de Gran Canaria",
+		"url": "https://www.luxairtours.lu/en/destinations/gran-canaria",
+		"country": "Spain - Canary Islands",
+		"region": "Gran Canaria",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 290,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/17/ee0513bdb4ffc879e851d21e00176055.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Lanzarote",
+		"url": "https://www.luxairtours.lu/en/destinations/lanzarote",
+		"country": "Spain - Canary Islands",
+		"region": "Lanzarote",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": false
+		}
+	},
+	{
+		"price": 321,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/02/24f72e0c8a1a6ad240843412f5f3ee33.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Benijo beach, Tenerife",
+		"url": "https://www.luxairtours.lu/en/destinations/tenerife-la-gomera",
+		"country": "Spain - Canary Islands",
+		"region": "Tenerife / La Gomera",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": false
+		}
+	},
+	{
+		"price": 160,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/01/1fd565034cb6122686e51569303a1428.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Camels on a beach in Djerba, Tunisia",
+		"url": "https://www.luxairtours.lu/en/destinations/djerba",
+		"country": "Tunisia",
+		"region": "Djerba",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": true,
+			"historical": false,
+			"relax": false
+		}
+	},
+	{
+		"price": 237,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/06/6ae2293531c50bff3724006dd948398e.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Antalya, Turkey",
+		"url": "https://www.luxairtours.lu/en/destinations/antalya",
+		"country": "Türkiye",
+		"region": "Antalya",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 417,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/14/2c92ed216a1319a422b1021fb4e50380.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Columns near Luxor City in Egypt",
+		"url": "https://www.luxairtours.lu/en/destinations/hurghada",
+		"country": "Egypt",
+		"region": "Hurghada",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 125,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/10/b92f6e9bc1c4d23190837563fa553673.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "beach in Biarritz",
+		"url": "https://www.luxairtours.lu/en/destinations/biarritz",
+		"country": "France",
+		"region": "Biarritz",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": false
+		}
+	},
+	{
+		"price": 380,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/04/857160cd9ac41759a7b7bb41653a1feb.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Mindelo is a port town on the Cape Verde in the northern part of the island Sao Vicente",
+		"url": "https://www.luxairtours.lu/en/destinations/sal",
+		"country": "Cape Verde",
+		"region": "Sal",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 99,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/04/d6aad92866c52d62f4d2c5d497b88adc.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Venice, Italy",
+		"url": "https://www.luxairtours.lu/en/destinations/lido-di-jesolo",
+		"country": "Italy",
+		"region": "Lido di Jesolo ",
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": true,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 130,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/08/0d5fdab61845eb04e717c3b4e5d9a3a7.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Monastir coast",
+		"url": "https://www.luxairtours.lu/en/destinations/enfidha",
+		"country": "Tunisia",
+		"region": "Monastir",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": false
+		}
+	},
+	{
+		"price": 474,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/14/2c92ed216a1319a422b1021fb4e50380.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Columns near Luxor City in Egypt",
+		"url": "https://www.luxairtours.lu/en/destinations/marsa-alam",
+		"country": "Egypt",
+		"region": "Marsa Alam",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 196,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/03/394ef6f4c55d68e742c9139e66592c10.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Boats in the clear water",
+		"url": "https://www.luxairtours.lu/en/destinations/menorca",
+		"country": "Spain - Balearic Islands",
+		"region": "Menorca",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 168,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/07/74fc2b7429310b278b20705ccfbe9e9b.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "view of Valencia from Pope Luna's Castle",
+		"url": "https://www.luxairtours.lu/en/destinations/valencia",
+		"country": "Spain",
+		"region": "Valencia",
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": true,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 275,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/05/e160324fa403a4af8a49a68fb183c189.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "the White Tower in Thessaloniki, Greece",
+		"url": "https://www.luxairtours.lu/en/destinations/thessaloniki-halkidiki",
+		"country": "Greece",
+		"region": "Thessaloniki - Halkidiki",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 460,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/11/378d4ad7788fced375d7dd2169099496.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Atlantic ocean coastline in Dakar, Senegal",
+		"url": "https://www.luxairtours.lu/en/destinations/dakar",
+		"country": "Senegal",
+		"region": "Dakar",
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": true,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 174,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/08/d57ecb5f043c83d48c149229e80dbb3a.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Ajaccio",
+		"url": "https://www.luxairtours.lu/en/destinations/corsica",
+		"country": "France",
+		"region": "Corsica",
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 263,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/01/ac60c58150334eb4a1a89e2033397d60.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "view of the buildings in Cagliari rising up the hill",
+		"url": "https://www.luxairtours.lu/en/destinations/sardinia",
+		"country": "Italy",
+		"region": "Sardinia",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": true,
+			"relax": true
+		}
+	},
+	{
+		"price": 187,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/07/7f4b67ddf9e73c27b44c77155bec11b5.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "Catania square",
+		"url": "https://www.luxairtours.lu/en/destinations/sicily",
+		"country": "Italy",
+		"region": "Sicily",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": true,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 207,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/16/d894adeeb85db1f997b244e1d63437bb.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "izmir",
+		"url": "https://www.luxairtours.lu/en/destinations/izmir",
+		"country": "Türkiye",
+		"region": "Izmir",
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": true,
+			"historical": false,
+			"relax": true
+		}
+	},
+	{
+		"price": 259,
+		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/17/51f07c921faf066664b7918b1b0058ec.jpg?width=300&height=250&mode=crop",
+		"imageAlt": "View of La Palma",
+		"url": "https://www.luxairtours.lu/en/destinations/la-palma",
+		"country": "Spain - Canary Islands",
+		"region": "La Palma",
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"kids": false,
+		"activities": {
+			"shopping": false,
+			"culture": false,
+			"historical": false,
+			"relax": false
+		}
+	}
+]
