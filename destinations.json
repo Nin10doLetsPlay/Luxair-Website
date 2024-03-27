@@ -366,7 +366,7 @@
 		"imageAlt": "Medieval moorish fortress Alcazaba in Almeria, Access to the fortress with gardens and trees of different species, panoramic view of the city, take in Almeria, Andalusia, Spain",
 		"url": "https://www.luxairtours.lu/en/destinations/costa-de-almeria",
 		"country": "Spain",
-		"region": "Costa de Almería",
+		"region": "Costa de Almerï¿½a",
 		"place": {
 			"city": false,
 			"beach": true
@@ -517,7 +517,7 @@
 		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/06/6ae2293531c50bff3724006dd948398e.jpg?width=300&height=250&mode=crop",
 		"imageAlt": "Antalya, Turkey",
 		"url": "https://www.luxairtours.lu/en/destinations/antalya",
-		"country": "Türkiye",
+		"country": "Tï¿½rkiye",
 		"region": "Antalya",
 		"place": {
 			"city": false,
@@ -533,8 +533,8 @@
 	},
 	{
 		"price": 417,
-		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/14/2c92ed216a1319a422b1021fb4e50380.jpg?width=300&height=250&mode=crop",
-		"imageAlt": "Columns near Luxor City in Egypt",
+		"image": "https://d1taxzywhomyrl.cloudfront.net//s3//ag-images-eu//12//8e218cda0204b740c793201975da96e1.jpg?width=300\u0026height=250\u0026mode=crop",
+		"imageAlt": "The old fishing boats in port next to the fishing market and Central Mosque on the background, Hurghada, Egypt.",
 		"url": "https://www.luxairtours.lu/en/destinations/hurghada",
 		"country": "Egypt",
 		"region": "Hurghada",
@@ -571,8 +571,8 @@
 	},
 	{
 		"price": 380,
-		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/04/857160cd9ac41759a7b7bb41653a1feb.jpg?width=300&height=250&mode=crop",
-		"imageAlt": "Mindelo is a port town on the Cape Verde in the northern part of the island Sao Vicente",
+		"image": "https:\/\/d1taxzywhomyrl.cloudfront.net\/s3\/ag-images-eu\/10\/681f2ea39c86d4e4a3af0816c0d66771.jpg?width=300\u0026height=250\u0026mode=crop",
+		"imageAlt": "Serra Malagueta mountains in Santiago Island Cape Verde - Cabo Verde",
 		"url": "https://www.luxairtours.lu/en/destinations/sal",
 		"country": "Cape Verde",
 		"region": "Sal",
@@ -783,7 +783,7 @@
 		"image": "https://d1taxzywhomyrl.cloudfront.net/s3/ag-images-eu/16/d894adeeb85db1f997b244e1d63437bb.jpg?width=300&height=250&mode=crop",
 		"imageAlt": "izmir",
 		"url": "https://www.luxairtours.lu/en/destinations/izmir",
-		"country": "Türkiye",
+		"country": "Tï¿½rkiye",
 		"region": "Izmir",
 		"place": {
 			"city": false,

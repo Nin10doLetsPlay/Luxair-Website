@@ -14,6 +14,7 @@ const properties = {
     type: {
         type: "answers",
         question: "What are you looking for?",
+        weight: 0,
         answers: [
             { id: "hotel", text: "Destination with hotel", image: "images/luxairtours.png" },
             { id: "destination", text: "Just a destination", image: "images/luxair.png" }
@@ -22,6 +23,7 @@ const properties = {
     place: {
         type: "answers",
         question: "Where would you like to go?",
+        weight: 3,
         answers: [
             { id: "city", text: "City", image: "images/city.webp" },
             { id: "beach", text: "Beach", image: "images/beach.webp" }
@@ -29,11 +31,13 @@ const properties = {
     },
     kids: {
         type: "boolean",
-        question: "Are you traveling with kids?"
+        question: "Are you traveling with kids?",
+        weight: 1
     },
     activities: {
         type: "answers",
         question: "What would you like to do?",
+        weight: 1,
         answers: [
             { id: "shopping", text: "Go shopping", image: "" },
             { id: "culture", text: "Discover the culture", image: "" },
@@ -43,13 +47,15 @@ const properties = {
     },
     price: {
         type: "slider",
-        question: "What is your budget?",
+        question: "What is your budget per person?",
+        weight: 2,
         min: 0,
-        max: 2050,
-        step: 50,
-        range: 1000
+        max: 550,
+        step: 10,
+        range: 300
     }
 };
+const totalWeight = Object.values(properties).reduce((accumulator, property) => { return accumulator + property.weight; }, 0);
 
 const content = document.getElementById("content");
 const answerContainer = document.getElementById("answerContainer");
@@ -82,7 +88,7 @@ function displayQuestion() {
         submitButton.type = "button";
         submitButton.appendChild(buttonText);
         submitButton.onclick = function () {
-            userAnswers[key] = sliderElement.value == 8050 ? 999999 : Math.floor(sliderElement.value / property.step) * property.step;
+            userAnswers[key] = Math.floor(sliderElement.value / property.step) * property.step;
             sliderElement.parentElement.removeChild(sliderElement);
             sliderValue.parentElement.removeChild(sliderValue);
             submitButton.parentElement.removeChild(submitButton);
@@ -187,13 +193,13 @@ async function displayResult() {
         for (const [property, userAnswer] of Object.entries(userAnswers)) {
             if (property == "type") continue;
             if (properties[property].type == "slider") {
-                result.rating += Math.max(0, 1 - (Math.abs(userAnswer - result[property]) / properties[property].range));
+                result.rating += properties[property].weight * Math.max(0, 1 - (Math.abs(userAnswer - result[property]) / properties[property].range));
             }
             else if (properties[property].type == "answers") {
-                if (result[property][userAnswer] == true) result.rating++;
+                if (result[property][userAnswer] == true) result.rating += properties[property].weight;
             }
             else if (properties[property].type == "boolean") {
-                if (!(userAnswer == true && result[property] == false)) result.rating++;
+                if (!(userAnswer == true && result[property] == false)) result.rating += properties[property].weight;
             }
         }
     }
@@ -223,7 +229,7 @@ async function displayResult() {
         resultText.appendChild(resultTitle);
 
         const resultDescription = document.createElement("p");
-        resultDescription.innerHTML = "Price: " + sortedResult.price + "€<br>Recommendation: " + Math.round(sortedResult.rating / Object.entries(userAnswers).length * 100) + "%";
+        resultDescription.innerHTML = "Price: " + sortedResult.price + "â‚¬<br>Recommendation: " + Math.round(sortedResult.rating / totalWeight * 100) + "%";
         resultText.appendChild(resultDescription);
     }
 }
