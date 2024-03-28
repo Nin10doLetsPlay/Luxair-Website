@@ -4,9 +4,16 @@
 		"description": "Destination in a beach with a forest. Price: 999 Euro",
 		"image": "https://www.gliddenlodge.com/wp-content/uploads/2018/09/door-county-beach.jpg",
 		"url": "about:blank",
-		"place": [ 1 ],
-		"people": [ 0, 1, 2, 3 ],
-		"activities": [ 0, 1, 2, 3 ],
+		"place": {
+			"city": false,
+			"beach": true
+		},
+		"activities": {
+			"shopping": true,
+			"culture": true,
+			"historical": true,
+			"relax": true
+		},
 		"price": 999
 	},
 	{
@@ -14,9 +21,16 @@
 		"description": "Destination in a city near mountains. Maximum 2 people. Price: 1999 Euro",
 		"image": "https://images7.alphacoders.com/112/1120507.jpg",
 		"url": "about:blank",
-		"place": [ 0 ],
-		"people": [ 0, 1, 2, 3 ],
-		"activities": [ 0, 1, 2, 3 ],
+		"place": {
+			"city": true,
+			"beach": false
+		},
+		"activities": {
+			"shopping": true,
+			"culture": true,
+			"historical": true,
+			"relax": true
+		},
 		"price": 1999
 	},
 	{
@@ -24,9 +38,16 @@
 		"description": "Hotel in a city with a beach. Price: 3999 Euro",
 		"image": "https://www.touropia.com/gfx/b/2009/03/jumeirah_beach.jpg",
 		"url": "about:blank",
-		"place": [ 0, 1 ],
-		"people": [ 0, 1, 2, 3 ],
-		"activities": [ 0, 1, 2, 3 ],
+		"place": {
+			"city": true,
+			"beach": true
+		},
+		"activities": {
+			"shopping": true,
+			"culture": true,
+			"historical": true,
+			"relax": true
+		},
 		"price": 2999
 	}
 ]

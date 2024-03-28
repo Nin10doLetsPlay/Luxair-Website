@@ -1,65 +1,35 @@
 
+const content = document.getElementById("content");
+const answerContainer = document.getElementById("answerContainer");
+const questionElement = document.getElementById("questionElement");
+
 async function get(url) {
     try {
         const response = await fetch(url);
         if (!response.ok) throw response.status;
         return await response.json();
     } catch (error) {
-        console.error(`Get request to ${url} failed: ${error}`);
+        console.error(`Fetching ${url} failed: ${error}`);
         return null;
     }
 }
 
-const properties = {
-    type: {
-        type: "answers",
-        question: "What are you looking for?",
-        weight: 0,
-        answers: [
-            { id: "hotel", text: "Destination with hotel", image: "images/luxairtours.png" },
-            { id: "destination", text: "Just a destination", image: "images/luxair.png" }
-        ]
-    },
-    place: {
-        type: "answers",
-        question: "Where would you like to go?",
-        weight: 3,
-        answers: [
-            { id: "city", text: "City", image: "images/city.webp" },
-            { id: "beach", text: "Beach", image: "images/beach.webp" }
-        ]
-    },
-    kids: {
-        type: "boolean",
-        question: "Are you traveling with kids?",
-        weight: 1
-    },
-    activities: {
-        type: "answers",
-        question: "What would you like to do?",
-        weight: 1,
-        answers: [
-            { id: "shopping", text: "Go shopping", image: "" },
-            { id: "culture", text: "Discover the culture", image: "" },
-            { id: "historical", text: "Visit a historical museum", image: "" },
-            { id: "relax", text: "Just relax", image: "" }
-        ]
-    },
-    price: {
-        type: "slider",
-        question: "What is your budget per person?",
-        weight: 2,
-        min: 0,
-        max: 550,
-        step: 10,
-        range: 300
-    }
-};
-const totalWeight = Object.values(properties).reduce((accumulator, property) => { return accumulator + property.weight; }, 0);
+let properties;
+let results;
 
-const content = document.getElementById("content");
-const answerContainer = document.getElementById("answerContainer");
-const questionElement = document.getElementById("questionElement");
+document.getElementById("hotelButton").onclick = async function () {
+    properties = await get("hotelQuestions.json");
+    results = await get("hotels.json");
+    answerContainer.innerHTML = "";
+    displayQuestion();
+}
+
+document.getElementById("destinationButton").onclick = async function () {
+    properties = await get("destinationQuestions.json")
+    results = await get("destinations.json");
+    answerContainer.innerHTML = "";
+    displayQuestion();
+}
 
 const userAnswers = {};
 
@@ -70,15 +40,16 @@ function displayQuestion() {
     questionElement.innerHTML = property.question;
     if (property.type == "slider") {
         const sliderValue = document.createElement("h2");
-        sliderValue.innerHTML = "0";
+        sliderValue.innerHTML = "0€";
 
         const sliderElement = document.createElement("input");
         sliderElement.className = "slider";
         sliderElement.type = "range";
         sliderElement.min = property.min;
         sliderElement.max = property.max;
+        sliderElement.value = 0;
         sliderElement.oninput = function () {
-            sliderValue.innerHTML = this.value == property.max ? "No limit" : Math.floor(this.value / property.step) * property.step;
+            sliderValue.innerHTML = this.value == property.max ? "No limit" : (Math.floor(this.value / property.step) * property.step) + "€";
         }
 
         const buttonText = document.createElement("h2");
@@ -89,9 +60,7 @@ function displayQuestion() {
         submitButton.appendChild(buttonText);
         submitButton.onclick = function () {
             userAnswers[key] = Math.floor(sliderElement.value / property.step) * property.step;
-            sliderElement.parentElement.removeChild(sliderElement);
-            sliderValue.parentElement.removeChild(sliderValue);
-            submitButton.parentElement.removeChild(submitButton);
+            answerContainer.innerHTML = "";
             currentQuestion++;
             if (currentQuestion < Object.entries(properties).length) {
                 displayQuestion();
@@ -118,7 +87,7 @@ function displayQuestion() {
             answerButton.type = "button";
             answerButton.onclick = function () {
                 userAnswers[key] = answer.id;
-                buttonContainer.parentElement.removeChild(buttonContainer);
+                answerContainer.innerHTML = "";
                 currentQuestion++;
                 if (currentQuestion < Object.entries(properties).length) {
                     displayQuestion();
@@ -164,7 +133,7 @@ function displayQuestion() {
             answerButton.type = "button";
             answerButton.onclick = function () {
                 userAnswers[key] = i == 0;
-                buttonContainer.parentElement.removeChild(buttonContainer);
+                answerContainer.innerHTML = "";
                 currentQuestion++;
                 if (currentQuestion < Object.entries(properties).length) {
                     displayQuestion();
@@ -185,13 +154,10 @@ function displayQuestion() {
 }
 
 async function displayResult() {
-    questionElement.parentElement.removeChild(questionElement);
-    answerContainer.parentElement.removeChild(answerContainer);
-    const results = userAnswers["type"] == "hotel" ? await get("test_hotels.json") : await get("destinations.json");
+    content.innerHTML = "";
     for (const result of results) {
         result.rating = 0;
         for (const [property, userAnswer] of Object.entries(userAnswers)) {
-            if (property == "type") continue;
             if (properties[property].type == "slider") {
                 result.rating += properties[property].weight * Math.max(0, 1 - (Math.abs(userAnswer - result[property]) / properties[property].range));
             }
@@ -229,9 +195,8 @@ async function displayResult() {
         resultText.appendChild(resultTitle);
 
         const resultDescription = document.createElement("p");
-        resultDescription.innerHTML = "Price: " + sortedResult.price + "€<br>Recommendation: " + Math.round(sortedResult.rating / totalWeight * 100) + "%";
+        const totalWeight = Object.values(properties).reduce((accumulator, property) => { return accumulator + property.weight; }, 0);
+        resultDescription.innerHTML = "Price: " + sortedResult.price + "€<br>Recommended at " + Math.round(sortedResult.rating / totalWeight * 100) + "%";
         resultText.appendChild(resultDescription);
     }
 }
-
-displayQuestion();

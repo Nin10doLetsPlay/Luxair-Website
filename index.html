@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="title" content="Luxair: Quiz - Find and Book 90+ Hotels and Destinations from 89€">
-    <meta name="description" content="Online quiz to find your next travel destination with Luxair">
-    <meta name="keywords" content="Luxair quiz, luxair Luxembourg airline, luxair flight, luxembourg airline, direct flights to Luxembourg, direct flights from luxembourg">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta name="apple-itunes-app" content="app-id=978696800">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="manifest" href="/luxair/manifest.json">
-
-    <title>Luxair: Quiz - Find and Book 90+ Hotels and Destinations from 89€</title>
+	<meta charset="utf-8">
+	<meta name="title" content="Luxair: Quiz - Find and Book 90+ Hotels and Destinations from 89€">
+	<meta name="description" content="Online quiz to find your next travel destination with Luxair">
+	<meta name="keywords" content="Luxair quiz, luxair Luxembourg airline, luxair flight, luxembourg airline, direct flights to Luxembourg, direct flights from luxembourg">
+	<meta name="MobileOptimized" content="width">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="apple-itunes-app" content="app-id=978696800">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="manifest" href="/luxair/manifest.json">
+	<title>Luxair: Quiz - Find and Book 90+ Hotels and Destinations from 89€</title>
 </head>
 <body>
-    <iframe id="header" src="luxair/header.html" title="Luxair Header" frameBorder="0" scrolling="no"></iframe>
-    <div id="content">
-        <h1 id="questionElement"></h1>
-        <div id="answerContainer"></div>
-        <script type="module" src="main.js"></script>
-    </div>
-    <iframe id="footer" src="luxair/footer.html" title="Luxair Footer" frameBorder="0" scrolling="no"></iframe>
+	<iframe id="header" src="luxair/header.html" title="Luxair Header" frameBorder="0" scrolling="no"></iframe>
+	<div id="content">
+		<h1 id="questionElement">What are you looking for?</h1>
+		<div id="answerContainer">
+			<div id="buttonContainer" class="grid4">
+				<button id="hotelButton" class="answerButton imageAnswerButton" type="button">
+					<div class="imageContainer">
+						<img class="answerImage" alt="Luxairtours logo" src="images/luxairtours.png">
+					</div>
+					<h2 class="answerText">Hotel (Not working)</h2>
+				</button>
+				<button id="destinationButton" class="answerButton imageAnswerButton" type="button">
+					<div class="imageContainer">
+						<img class="answerImage" alt="Luxair logo" src="images/luxair.png">
+					</div>
+					<h2 class="answerText">Just a destination</h2>
+				</button>
+			</div>
+		</div>
+	</div>
+	<iframe id="footer" src="luxair/footer.html" title="Luxair Footer" frameBorder="0" scrolling="no"></iframe>
+	<script type="module" src="main.js"></script>
 </body>
 </html>

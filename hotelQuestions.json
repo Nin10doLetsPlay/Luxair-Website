@@ -1,0 +1,55 @@
+{
+	"place": {
+		"type": "answers",
+		"question": "Where would you like to go?",
+		"weight": 3,
+		"answers": [
+			{
+				"id": "city",
+				"text": "City",
+				"image": "images/city.webp"
+			},
+			{
+				"id": "beach",
+				"text": "Beach",
+				"image": "images/beach.webp"
+			}
+		]
+	},
+	"activities": {
+		"type": "answers",
+		"question": "What would you like to do?",
+		"weight": 1,
+		"answers": [
+			{
+				"id": "shopping",
+				"text": "Go shopping",
+				"image": ""
+			},
+			{
+				"id": "culture",
+				"text": "Discover the culture",
+				"image": ""
+			},
+			{
+				"id": "historical",
+				"text": "Visit a historical museum",
+				"image": ""
+			},
+			{
+				"id": "relax",
+				"text": "Just relax",
+				"image": ""
+			}
+		]
+	},
+	"price": {
+		"type": "slider",
+		"question": "What is your budget per person?",
+		"weight": 2,
+		"min": 0,
+		"max": 1000000000000,
+		"step": 10,
+		"range": 300
+	}
+}
