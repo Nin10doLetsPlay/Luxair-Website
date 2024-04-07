@@ -1,0 +1,132 @@
+{
+	"people": {
+		"type": "answers",
+		"weight": 2,
+		"question": "Who are you traveling with?",
+		"answers": [
+			{
+				"id": "family",
+				"text": "Family"
+			},
+			{
+				"id": "couple",
+				"text": "Couple"
+			},
+			{
+				"id": "friends",
+				"text": "Friends"
+			},
+			{
+				"id": "alone",
+				"text": "Alone"
+			}
+		]
+	},
+	"place": {
+		"type": "answers",
+		"weight": 3,
+		"question": "Where would you like to go?",
+		"answers": [
+			{
+				"id": "city",
+				"text": "City",
+				"image": "images/city.webp"
+			},
+			{
+				"id": "beach",
+				"text": "Beach",
+				"image": "images/beach.webp"
+			}
+		]
+	},
+	"temperature": {
+		"type": "slider",
+		"weight": 2,
+		"question": "What temperature should it be?",
+		"min": 0,
+		"max": 30,
+		"step": 1,
+		"range": 10,
+		"unit": "°C"
+	},
+	"activity": {
+		"type": "answers",
+		"weight": 2,
+		"question": "What would you like to do?",
+		"answers": [
+			{
+				"id": "aquaPark",
+				"text": "Aqua Park"
+			},
+			{
+				"id": "wellness",
+				"text": "Wellness"
+			},
+			{
+				"id": "nightClub",
+				"text": "Night Club"
+			},
+			{
+				"id": "sport",
+				"text": "Sport"
+			}
+		]
+	},
+	"sport": {
+		"type": "answers",
+		"weight": 1,
+		"question": "What sport would you like to do?",
+		"answers": [
+			{
+				"id": "waterSports",
+				"text": "Water Sports"
+			},
+			{
+				"id": "tennis",
+				"text": "Tennis / Badminton"
+			},
+			{
+				"id": "fitness",
+				"text": "Fitness"
+			},
+			{
+				"id": "other",
+				"text": "Other"
+			}
+		]
+	},
+	"important": {
+		"type": "answers",
+		"weight": 1,
+		"question": "What is the most important to you?",
+		"answers": [
+			{
+				"id": "food",
+				"text": "Food"
+			},
+			{
+				"id": "nature",
+				"text": "Nature"
+			},
+			{
+				"id": "luxury",
+				"text": "Luxury"
+			},
+			{
+				"id": "adultsOnly",
+				"text": "Adults Only"
+			}
+		]
+	},
+	"price": {
+		"type": "slider",
+		"weight": 4,
+		"question": "What is your budget per person?",
+		"min": 0,
+		"max": 5050,
+		"step": 50,
+		"range": 2000,
+		"unit": "€",
+		"maxText": "No limit"
+	}
+}

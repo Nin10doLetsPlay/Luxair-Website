@@ -1,4 +1,3 @@
-
 const content = document.getElementById("content");
 const answerContainer = document.getElementById("answerContainer");
 const questionElement = document.getElementById("questionElement");
@@ -14,22 +13,8 @@ async function get(url) {
     }
 }
 
-let properties;
-let results;
-
-document.getElementById("hotelButton").onclick = async function () {
-    properties = await get("hotelQuestions.json");
-    results = await get("hotels.json");
-    answerContainer.innerHTML = "";
-    displayQuestion();
-}
-
-document.getElementById("destinationButton").onclick = async function () {
-    properties = await get("destinationQuestions.json")
-    results = await get("destinations.json");
-    answerContainer.innerHTML = "";
-    displayQuestion();
-}
+const properties = await get("questions.json");
+const results = await get("hotels.json");
 
 const userAnswers = {};
 
@@ -40,7 +25,7 @@ function displayQuestion() {
     questionElement.innerHTML = property.question;
     if (property.type == "slider") {
         const sliderValue = document.createElement("h2");
-        sliderValue.innerHTML = "0€";
+        sliderValue.innerHTML = "0" + property.unit;
 
         const sliderElement = document.createElement("input");
         sliderElement.className = "slider";
@@ -49,7 +34,7 @@ function displayQuestion() {
         sliderElement.max = property.max;
         sliderElement.value = 0;
         sliderElement.oninput = function () {
-            sliderValue.innerHTML = this.value == property.max ? "No limit" : (Math.floor(this.value / property.step) * property.step) + "€";
+            sliderValue.innerHTML = this.value == property.max && property.maxText != null ? property.maxText : (Math.floor(this.value / property.step) * property.step) + property.unit;
         }
 
         const buttonText = document.createElement("h2");
@@ -119,38 +104,6 @@ function displayQuestion() {
             buttonContainer.appendChild(answerButton);
         }
     }
-    else if (property.type == "boolean") {
-
-        const buttonContainer = document.createElement("div");
-        buttonContainer.id = "buttonContainer"
-        buttonContainer.className = "grid4";
-        answerContainer.appendChild(buttonContainer);
-
-        for (let i = 0; i < 2; i++) {
-
-            const answerButton = document.createElement("button");
-            answerButton.className = "answerButton";
-            answerButton.type = "button";
-            answerButton.onclick = function () {
-                userAnswers[key] = i == 0;
-                answerContainer.innerHTML = "";
-                currentQuestion++;
-                if (currentQuestion < Object.entries(properties).length) {
-                    displayQuestion();
-                }
-                else {
-                    displayResult();
-                }
-            }
-
-            const answerText = document.createElement("h2");
-            answerText.className = "answerText";
-            answerText.innerHTML = i == 0 ? "Yes" : "No";
-            answerButton.appendChild(answerText);
-
-            buttonContainer.appendChild(answerButton);
-        }
-    }
 }
 
 async function displayResult() {
@@ -163,9 +116,6 @@ async function displayResult() {
             }
             else if (properties[property].type == "answers") {
                 if (result[property][userAnswer] == true) result.rating += properties[property].weight;
-            }
-            else if (properties[property].type == "boolean") {
-                if (!(userAnswer == true && result[property] == false)) result.rating += properties[property].weight;
             }
         }
     }
@@ -183,7 +133,7 @@ async function displayResult() {
 
         const resultImage = document.createElement("img");
         resultImage.className = "resultImage";
-        resultImage.src = sortedResult.image;
+        resultImage.src = sortedResult.images[0];
         resultContainer.appendChild(resultImage);
 
         const resultText = document.createElement("div");
@@ -191,7 +141,7 @@ async function displayResult() {
         resultContainer.appendChild(resultText);
 
         const resultTitle = document.createElement("h2");
-        resultTitle.innerHTML = sortedResult.region + " - " + sortedResult.country;
+        resultTitle.innerHTML = sortedResult.name + " - " + sortedResult.country;
         resultText.appendChild(resultTitle);
 
         const resultDescription = document.createElement("p");
@@ -200,3 +150,5 @@ async function displayResult() {
         resultText.appendChild(resultDescription);
     }
 }
+
+displayQuestion();
