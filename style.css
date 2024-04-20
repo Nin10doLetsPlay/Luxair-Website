@@ -27,7 +27,6 @@ a {
 #questionElement {
 	font-size: 48px;
 	font-weight: bold;
-	margin-bottom: 20px;
 }
 
 #content {
@@ -100,19 +99,18 @@ button:hover {
 }
 
 .imageAnswerButton {
-	height: 380px;
+	height: auto;
 }
 
 .imageContainer {
-	width: 100%;
-	height: calc(100% - 63px);
-	margin-bottom: 20px;
+	max-width: calc(100% - 40px);
+	margin: 20px;
 	overflow: hidden;
 }
 
 .answerImage {
 	max-width: 100%;
-	max-height: 100%;
+	max-height: 300px;
 }
 
 .answerText {
@@ -179,5 +177,27 @@ button:hover {
 
 .resultImage {
 	margin: 20px;
-	height: 200px;
+	max-height: 200px;
+	max-width: calc(100% - 40px);
+}
+
+.loadButton {
+	display: table;
+	margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+	.answerText {
+		font-size: 20px;
+	}
+	#questionElement {
+		font-size: 30px;
+	}
+	.resultImage {
+		margin: 10px;
+		max-width: calc(100% - 20px);
+	}
+	button:hover {
+		border: 5px solid #c6eaf9;
+	}
 }

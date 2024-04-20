@@ -3,13 +3,13 @@ const answerContainer = document.getElementById("answerContainer");
 const questionElement = document.getElementById("questionElement");
 
 async function get(url) {
+    const response = await fetch(url);
     try {
-        const response = await fetch(url);
         if (!response.ok) throw response.status;
         return await response.json();
     } catch (error) {
         console.error(`Fetching ${url} failed: ${error}`);
-        return null;
+        return await response.json();
     }
 }
 
@@ -106,26 +106,20 @@ function displayQuestion() {
     }
 }
 
-async function displayResult() {
-    content.innerHTML = "";
-    for (const result of results) {
-        result.rating = 0;
-        for (const [property, userAnswer] of Object.entries(userAnswers)) {
-            if (properties[property].type == "slider") {
-                result.rating += properties[property].weight * Math.max(0, 1 - (Math.abs(userAnswer - result[property]) / properties[property].range));
-            }
-            else if (properties[property].type == "answers") {
-                if (result[property][userAnswer] == true) result.rating += properties[property].weight;
-            }
-        }
-    }
-    const sortedResults = results.sort((a, b) => b.rating - a.rating);
+let i = 0;
+let target = 0;
+let sortedResults;
+let resultDiv;
 
-    for (const sortedResult of sortedResults) {
+function loadResults() {
+    target += 10;
+    while (i < target) {
+
+        const sortedResult = sortedResults[i];
 
         const resultLink = document.createElement("a");
         resultLink.href = sortedResult.url;
-        content.appendChild(resultLink);
+        resultDiv.appendChild(resultLink);
 
         const resultContainer = document.createElement("div");
         resultContainer.className = "resultContainer";
@@ -148,7 +142,38 @@ async function displayResult() {
         const totalWeight = Object.values(properties).reduce((accumulator, property) => { return accumulator + property.weight; }, 0);
         resultDescription.innerHTML = "Price: " + sortedResult.price + "€<br>Recommended at " + Math.round(sortedResult.rating / totalWeight * 100) + "%";
         resultText.appendChild(resultDescription);
+        i++;
     }
+}
+
+async function displayResult() {
+    content.innerHTML = "";
+    for (const result of results) {
+        result.rating = 0;
+        for (const [property, userAnswer] of Object.entries(userAnswers)) {
+            if (properties[property].type == "slider") {
+                result.rating += properties[property].weight * Math.max(0, 1 - (Math.abs(userAnswer - result[property]) / properties[property].range));
+            }
+            else if (properties[property].type == "answers") {
+                if (result[property][userAnswer] == true) result.rating += properties[property].weight;
+            }
+        }
+    }
+    sortedResults = results.sort((a, b) => b.rating - a.rating);
+    resultDiv = document.createElement("div");
+    content.appendChild(resultDiv);
+
+    const loadButton = document.createElement("button");
+    loadButton.className = "loadButton";
+    loadButton.onclick = loadResults;
+    content.appendChild(loadButton);
+
+    const loadButtonText = document.createElement("h2");
+    loadButtonText.style.margin = 0;
+    loadButtonText.innerHTML = "Load More";
+    loadButton.appendChild(loadButtonText);
+
+    loadResults();
 }
 
 displayQuestion();

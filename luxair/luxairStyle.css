@@ -1,1 +1,1917 @@
-@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);.button,.dropdown,.dropdown__items,.grid .grid__cell,.ie_warning,.inputTextField,.nav,.nav__link__inner,.nav__link__name,.switches_countrylanguage .dropdown,.tooltip__content,html,section{box-sizing:border-box}@media (max-width:1023px){div.myluxair-menu .nav__link__name{height:48px;padding:12px 16px;box-sizing:border-box}}:root{--ldo--color-primary:#ffb300;--ldo--color-primary-faded:#ffd980;--ldo--color-active:#ff9a00;--ld--color-text:#504d41;--ldo--color-primary:#0091b8;--ldo--color-primary-faded:#80c8dc;--ldo--color-secondary:#026681;--ldo--color-active:#026681;--ldo--color-text:#504d41;--ldo--le-jaune:#ffb300;--ldo--le-bleu:#0091b8}html{color:#000;background:#fff;-webkit-text-size-adjust:100%;--mat-option-selected-state-label-text-color:#0091b8;--mat-option-label-text-color:#000000de;--mat-option-hover-state-layer-color:#0000000a;--mat-option-focus-state-layer-color:#0000000a;--mat-option-selected-state-layer-color:#0000000a;--mat-optgroup-label-text-color:#000000de;--mdc-filled-text-field-caret-color:#0091b8;--mdc-filled-text-field-focus-active-indicator-color:#0091b8;--mdc-filled-text-field-focus-label-text-color:#0091b8de;--mdc-filled-text-field-container-color:#f5f5f5;--mdc-filled-text-field-disabled-container-color:#fafafa;--mdc-filled-text-field-label-text-color:#0009;--mdc-filled-text-field-disabled-label-text-color:#00000061;--mdc-filled-text-field-input-text-color:#000000de;--mdc-filled-text-field-disabled-input-text-color:#00000061;--mdc-filled-text-field-input-text-placeholder-color:#0009;--mdc-filled-text-field-error-focus-label-text-color:#e2003b;--mdc-filled-text-field-error-label-text-color:#e2003b;--mdc-filled-text-field-error-caret-color:#e2003b;--mdc-filled-text-field-active-indicator-color:#0000006b;--mdc-filled-text-field-disabled-active-indicator-color:#0000000f;--mdc-filled-text-field-hover-active-indicator-color:#000000de;--mdc-filled-text-field-error-active-indicator-color:#e2003b;--mdc-filled-text-field-error-focus-active-indicator-color:#e2003b;--mdc-filled-text-field-error-hover-active-indicator-color:#e2003b;--mdc-outlined-text-field-caret-color:#0091b8;--mdc-outlined-text-field-focus-outline-color:#0091b8;--mdc-outlined-text-field-focus-label-text-color:#0091b8de;--mdc-outlined-text-field-label-text-color:#0009;--mdc-outlined-text-field-disabled-label-text-color:#00000061;--mdc-outlined-text-field-input-text-color:#000000de;--mdc-outlined-text-field-disabled-input-text-color:#00000061;--mdc-outlined-text-field-input-text-placeholder-color:#0009;--mdc-outlined-text-field-error-caret-color:#e2003b;--mdc-outlined-text-field-error-focus-label-text-color:#e2003b;--mdc-outlined-text-field-error-label-text-color:#e2003b;--mdc-outlined-text-field-outline-color:#00000061;--mdc-outlined-text-field-disabled-outline-color:#0000000f;--mdc-outlined-text-field-hover-outline-color:#000000de;--mdc-outlined-text-field-error-focus-outline-color:#e2003b;--mdc-outlined-text-field-error-hover-outline-color:#e2003b;--mdc-outlined-text-field-error-outline-color:#e2003b;--mat-form-field-disabled-input-text-placeholder-color:#00000061;--mat-select-panel-background-color:#fff;--mat-select-enabled-trigger-text-color:#000000de;--mat-select-disabled-trigger-text-color:#00000061;--mat-select-placeholder-text-color:#0009;--mat-select-enabled-arrow-color:#0000008a;--mat-select-disabled-arrow-color:#00000061;--mat-select-focused-arrow-color:#0091b8de;--mat-select-invalid-arrow-color:#e2003bde;--mat-autocomplete-background-color:#fff;--mat-menu-item-label-text-color:#000000de;--mat-menu-item-icon-color:#000000de;--mat-menu-item-hover-state-layer-color:#0000000a;--mat-menu-item-focus-state-layer-color:#0000000a;--mat-menu-container-color:#fff;--mat-paginator-container-text-color:#000000de;--mat-paginator-container-background-color:#fff;--mat-paginator-enabled-icon-color:#0000008a;--mat-paginator-disabled-icon-color:#0000001f;--mat-paginator-container-size:56px;--mdc-checkbox-disabled-selected-icon-color:#00000061;--mdc-checkbox-disabled-unselected-icon-color:#00000061;--mdc-checkbox-selected-checkmark-color:#fff;--mdc-checkbox-selected-focus-icon-color:#0091b8;--mdc-checkbox-selected-hover-icon-color:#0091b8;--mdc-checkbox-selected-icon-color:#0091b8;--mdc-checkbox-selected-pressed-icon-color:#0091b8;--mdc-checkbox-unselected-focus-icon-color:#212121;--mdc-checkbox-unselected-hover-icon-color:#212121;--mdc-checkbox-unselected-icon-color:#0000008a;--mdc-checkbox-unselected-pressed-icon-color:#0000008a;--mdc-checkbox-selected-focus-state-layer-color:#0091b8;--mdc-checkbox-selected-hover-state-layer-color:#0091b8;--mdc-checkbox-selected-pressed-state-layer-color:#0091b8;--mdc-checkbox-unselected-focus-state-layer-color:#000;--mdc-checkbox-unselected-hover-state-layer-color:#000;--mdc-checkbox-unselected-pressed-state-layer-color:#000;--mdc-checkbox-state-layer-size:40px;--mat-table-background-color:#fff;--mat-table-header-headline-color:#000000de;--mat-table-row-item-label-text-color:#000000de;--mat-table-row-item-outline-color:#0000001f;--mat-table-header-container-height:56px;--mat-table-footer-container-height:52px;--mat-table-row-item-container-height:52px;--mat-badge-background-color:#0091b8;--mat-badge-text-color:#fff;--mat-badge-disabled-state-background-color:#b9b9b9;--mat-badge-disabled-state-text-color:#00000061;--mat-bottom-sheet-container-text-color:#000000de;--mat-bottom-sheet-container-background-color:#fff;--mat-legacy-button-toggle-text-color:#00000061;--mat-legacy-button-toggle-state-layer-color:#0000001f;--mat-legacy-button-toggle-selected-state-text-color:#0000008a;--mat-legacy-button-toggle-selected-state-background-color:#e0e0e0;--mat-legacy-button-toggle-disabled-state-text-color:#00000042;--mat-legacy-button-toggle-disabled-state-background-color:#eee;--mat-legacy-button-toggle-disabled-selected-state-background-color:#bdbdbd;--mat-standard-button-toggle-text-color:#000000de;--mat-standard-button-toggle-background-color:#fff;--mat-standard-button-toggle-state-layer-color:#000;--mat-standard-button-toggle-selected-state-background-color:#e0e0e0;--mat-standard-button-toggle-selected-state-text-color:#000000de;--mat-standard-button-toggle-disabled-state-text-color:#00000042;--mat-standard-button-toggle-disabled-state-background-color:#fff;--mat-standard-button-toggle-disabled-selected-state-text-color:#000000de;--mat-standard-button-toggle-disabled-selected-state-background-color:#bdbdbd;--mat-standard-button-toggle-divider-color:#e0e0e0;--mat-standard-button-toggle-height:48px;--mat-datepicker-calendar-date-selected-state-text-color:#fff;--mat-datepicker-calendar-date-selected-state-background-color:#0091b8;--mat-datepicker-calendar-date-selected-disabled-state-background-color:#0091b866;--mat-datepicker-calendar-date-today-selected-state-outline-color:#fff;--mat-datepicker-calendar-date-focus-state-background-color:#0091b84d;--mat-datepicker-calendar-date-hover-state-background-color:#0091b84d;--mat-datepicker-toggle-active-state-icon-color:#0091b8;--mat-datepicker-calendar-date-in-range-state-background-color:#0091b833;--mat-datepicker-calendar-date-in-comparison-range-state-background-color:#f9ab0033;--mat-datepicker-calendar-date-in-overlap-range-state-background-color:#a8dab5;--mat-datepicker-calendar-date-in-overlap-range-selected-state-background-color:#46a35e;--mat-datepicker-toggle-icon-color:#0000008a;--mat-datepicker-calendar-body-label-text-color:#0000008a;--mat-datepicker-calendar-period-button-icon-color:#0000008a;--mat-datepicker-calendar-navigation-button-icon-color:#0000008a;--mat-datepicker-calendar-header-divider-color:#0000001f;--mat-datepicker-calendar-header-text-color:#0000008a;--mat-datepicker-calendar-date-today-outline-color:#00000061;--mat-datepicker-calendar-date-today-disabled-state-outline-color:#0000002e;--mat-datepicker-calendar-date-text-color:#000000de;--mat-datepicker-calendar-date-outline-color:transparent;--mat-datepicker-calendar-date-disabled-state-text-color:#00000061;--mat-datepicker-calendar-date-preview-state-outline-color:#0000003d;--mat-datepicker-range-input-separator-color:#000000de;--mat-datepicker-range-input-disabled-state-separator-color:#00000061;--mat-datepicker-range-input-disabled-state-text-color:#00000061;--mat-datepicker-calendar-container-background-color:#fff;--mat-datepicker-calendar-container-text-color:#000000de;--mat-divider-color:#0000001f;--mat-expansion-container-background-color:#fff;--mat-expansion-container-text-color:#000000de;--mat-expansion-actions-divider-color:#0000001f;--mat-expansion-header-hover-state-layer-color:#0000000a;--mat-expansion-header-focus-state-layer-color:#0000000a;--mat-expansion-header-disabled-state-text-color:#00000042;--mat-expansion-header-text-color:#000000de;--mat-expansion-header-description-color:#0000008a;--mat-expansion-header-indicator-color:#0000008a;--mat-expansion-header-collapsed-state-height:48px;--mat-expansion-header-expanded-state-height:64px;--mat-icon-color:inherit;--mat-sidenav-container-divider-color:#0000001f;--mat-sidenav-container-background-color:#fff;--mat-sidenav-container-text-color:#000000de;--mat-sidenav-content-background-color:#fafafa;--mat-sidenav-content-text-color:#000000de;--mat-sidenav-scrim-color:#0009;--mat-stepper-header-icon-foreground-color:#fff;--mat-stepper-header-selected-state-icon-background-color:#0091b8;--mat-stepper-header-selected-state-icon-foreground-color:#fff;--mat-stepper-header-done-state-icon-background-color:#0091b8;--mat-stepper-header-done-state-icon-foreground-color:#fff;--mat-stepper-header-edit-state-icon-background-color:#0091b8;--mat-stepper-header-edit-state-icon-foreground-color:#fff;--mat-stepper-container-color:#fff;--mat-stepper-line-color:#0000001f;--mat-stepper-header-hover-state-layer-color:#0000000a;--mat-stepper-header-focus-state-layer-color:#0000000a;--mat-stepper-header-label-text-color:#0000008a;--mat-stepper-header-optional-label-text-color:#0000008a;--mat-stepper-header-selected-state-label-text-color:#000000de;--mat-stepper-header-error-state-label-text-color:#e2003b;--mat-stepper-header-icon-background-color:#0000008a;--mat-stepper-header-error-state-icon-foreground-color:#e2003b;--mat-stepper-header-error-state-icon-background-color:transparent;--mat-stepper-header-height:72px;--mat-toolbar-container-background-color:#f5f5f5;--mat-toolbar-container-text-color:#000000de;--mat-toolbar-standard-height:64px;--mat-toolbar-mobile-height:56px;--mat-badge-text-font:"Exo 2",sans-serif;--mat-badge-text-size:12px;--mat-badge-text-weight:600;--mat-badge-small-size-text-size:9px;--mat-badge-large-size-text-size:24px;--mat-bottom-sheet-container-text-font:"Exo 2",sans-serif;--mat-bottom-sheet-container-text-line-height:24px;--mat-bottom-sheet-container-text-size:16px;--mat-bottom-sheet-container-text-tracking:normal;--mat-bottom-sheet-container-text-weight:400;--mat-legacy-button-toggle-text-font:"Exo 2",sans-serif;--mat-standard-button-toggle-text-font:"Exo 2",sans-serif;--mat-datepicker-calendar-text-font:"Exo 2",sans-serif;--mat-datepicker-calendar-text-size:13px;--mat-datepicker-calendar-body-label-text-size:14px;--mat-datepicker-calendar-body-label-text-weight:500;--mat-datepicker-calendar-period-button-text-size:14px;--mat-datepicker-calendar-period-button-text-weight:500;--mat-datepicker-calendar-header-text-size:11px;--mat-datepicker-calendar-header-text-weight:400;--mat-expansion-header-text-font:"Exo 2",sans-serif;--mat-expansion-header-text-size:14px;--mat-expansion-header-text-weight:500;--mat-expansion-header-text-line-height:inherit;--mat-expansion-header-text-tracking:inherit;--mat-expansion-container-text-font:"Exo 2",sans-serif;--mat-expansion-container-text-line-height:24px;--mat-expansion-container-text-size:16px;--mat-expansion-container-text-tracking:normal;--mat-expansion-container-text-weight:400;--mat-grid-list-tile-header-primary-text-size:16px;--mat-grid-list-tile-header-secondary-text-size:12px;--mat-grid-list-tile-footer-primary-text-size:16px;--mat-grid-list-tile-footer-secondary-text-size:12px;--mat-stepper-container-text-font:"Exo 2",sans-serif;--mat-stepper-header-label-text-font:"Exo 2",sans-serif;--mat-stepper-header-label-text-size:16px;--mat-stepper-header-label-text-weight:400;--mat-stepper-header-error-state-label-text-size:16px;--mat-stepper-header-selected-state-label-text-size:16px;--mat-stepper-header-selected-state-label-text-weight:400;--mat-toolbar-title-text-font:"Exo 2",sans-serif;--mat-toolbar-title-text-line-height:32px;--mat-toolbar-title-text-size:20px;--mat-toolbar-title-text-tracking:.0125em;--mat-toolbar-title-text-weight:500;--mat-option-label-text-font:"Exo 2",sans-serif;--mat-option-label-text-line-height:24px;--mat-option-label-text-size:16px;--mat-option-label-text-tracking:.03125em;--mat-option-label-text-weight:400;--mat-optgroup-label-text-font:"Exo 2",sans-serif;--mat-optgroup-label-text-line-height:24px;--mat-optgroup-label-text-size:16px;--mat-optgroup-label-text-tracking:.03125em;--mat-optgroup-label-text-weight:400;--mdc-filled-text-field-label-text-font:"Exo 2",sans-serif;--mdc-filled-text-field-label-text-size:16px;--mdc-filled-text-field-label-text-tracking:.03125em;--mdc-filled-text-field-label-text-weight:400;--mdc-outlined-text-field-label-text-font:"Exo 2",sans-serif;--mdc-outlined-text-field-label-text-size:16px;--mdc-outlined-text-field-label-text-tracking:.03125em;--mdc-outlined-text-field-label-text-weight:400;--mat-form-field-container-text-font:"Exo 2",sans-serif;--mat-form-field-container-text-line-height:24px;--mat-form-field-container-text-size:16px;--mat-form-field-container-text-tracking:.03125em;--mat-form-field-container-text-weight:400;--mat-form-field-outlined-label-text-populated-size:16px;--mat-form-field-subscript-text-font:"Exo 2",sans-serif;--mat-form-field-subscript-text-line-height:20px;--mat-form-field-subscript-text-size:12px;--mat-form-field-subscript-text-tracking:.0333333333em;--mat-form-field-subscript-text-weight:400;--mat-select-trigger-text-font:"Exo 2",sans-serif;--mat-select-trigger-text-line-height:24px;--mat-select-trigger-text-size:16px;--mat-select-trigger-text-tracking:.03125em;--mat-select-trigger-text-weight:400;--mat-menu-item-label-text-font:"Exo 2",sans-serif;--mat-menu-item-label-text-size:16px;--mat-menu-item-label-text-tracking:.03125em;--mat-menu-item-label-text-line-height:24px;--mat-menu-item-label-text-weight:400;--mat-paginator-container-text-font:"Exo 2",sans-serif;--mat-paginator-container-text-line-height:20px;--mat-paginator-container-text-size:12px;--mat-paginator-container-text-tracking:.0333333333em;--mat-paginator-container-text-weight:400;--mat-paginator-select-trigger-text-size:12px;--mat-table-header-headline-font:"Exo 2",sans-serif;--mat-table-header-headline-line-height:22px;--mat-table-header-headline-size:14px;--mat-table-header-headline-weight:500;--mat-table-header-headline-tracking:.0071428571em;--mat-table-row-item-label-text-font:"Exo 2",sans-serif;--mat-table-row-item-label-text-line-height:24px;--mat-table-row-item-label-text-size:16px;--mat-table-row-item-label-text-weight:400;--mat-table-row-item-label-text-tracking:normal;--mat-table-footer-supporting-text-font:"Exo 2",sans-serif;--mat-table-footer-supporting-text-line-height:24px;--mat-table-footer-supporting-text-size:16px;--mat-table-footer-supporting-text-weight:400;--mat-table-footer-supporting-text-tracking:normal;-ms-overflow-style:scrollbar}body,div,form,h3,h4,input,li,p,ul{margin:0;padding:0}img{border:0}strong{font-style:normal;font-weight:600}ul{list-style:none}h3,h4{font-size:100%;font-weight:400}input{font-family:inherit;font-size:inherit;font-weight:inherit}::-ms-clear{display:none}.color-leblue{color:#0091b8}.color-invalid{color:#b60218}.color-fuscousGray,a{color:#504d41}@font-face{font-family:"Exo 2";src:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-light.woff?u7b62634f=) format(woff);font-weight:300}@font-face{font-family:"Exo 2";font-style:normal;font-weight:300;src:local("Exo 2"),local(Exo2-Regular),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-light-latinext.woff2?u7b62634f=) format(woff2);unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Exo 2";font-style:normal;font-weight:300;src:local("Exo 2"),local(Exo2-Regular),url(https://fonts.gstatic.com/s/exo2/v9/7cHmv4okm5zmbtYoK-4.woff2) format(woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:"Exo 2";src:url(exo2-regular.woff) format(woff);font-weight:400}@font-face{font-family:"Exo 2";font-style:normal;font-weight:400;src:local("Exo 2"),local(Exo2-Regular),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-regular-latinext.woff2?u7b62634f=) format(woff2);unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Exo 2";font-style:normal;font-weight:400;src:local("Exo 2"),local(Exo2-Regular),url(https://fonts.gstatic.com/s/exo2/v9/7cHmv4okm5zmbtYoK-4.woff2) format(woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:"Exo 2";src:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-regular-italic.woff?u7b62634f=) format(woff);font-style:italic;font-weight:400}@font-face{font-family:"Exo 2";font-style:italic;font-weight:400;src:local("Exo 2 Italic"),local(Exo2-Italic),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-regular-italic-latinext.woff2?u7b62634f=) format(woff2);unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Exo 2";font-style:italic;font-weight:400;src:local("Exo 2 Italic"),local(Exo2-Italic),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-regular-italic-latin.woff2?u7b62634f=) format(woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:"Exo 2";src:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-medium.woff?u7b62634f=) format(woff);font-weight:500}@font-face{font-family:"Exo 2";font-style:normal;font-weight:500;src:local("Exo 2"),local(Exo2-Regular),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-medium-latinext.woff2?u7b62634f=) format(woff2);unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Exo 2";font-style:normal;font-weight:500;src:local("Exo 2"),local(Exo2-Regular),url(https://fonts.gstatic.com/s/exo2/v9/7cHmv4okm5zmbtYoK-4.woff2) format(woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:"Exo 2";font-weight:600;src:local("Exo 2 Semi Bold"),local(Exo2-SemiBold),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-semibold-latinext.woff2?u7b62634f=) format(woff2);unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Exo 2";font-weight:600;src:local("Exo 2 Semi Bold"),local(Exo2-SemiBold),url(https://fonts.gstatic.com/s/exo2/v9/7cHmv4okm5zmbtYoK-4.woff2) format(woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:"Exo 2";font-style:italic;font-weight:600;src:local("Exo 2 Semi Bold Italic"),local(Exo2-SemiBoldItalic),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-semibold-italic.woff?u7b62634f=) format(woff)}@font-face{font-family:"Exo 2";font-style:italic;font-weight:600;src:local("Exo 2 Semi Bold Italic"),local(Exo2-SemiBoldItalic),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-semibold-italic-latinext.woff2?u7b62634f=) format(woff2);unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Exo 2";font-style:italic;font-weight:600;src:local("Exo 2 Semi Bold Italic"),local(Exo2-SemiBoldItalic),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-semibold-italic-latin.woff2?u7b62634f=) format(woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}.grid{display:-ms-flexbox;display:flex;margin:0-10px;padding-top:20px;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-pack:justify;justify-content:space-between}.grid.grid--center{-ms-flex-pack:center;justify-content:center}.footer__copyRight,.footer__links,.footer__part,.footer__part__info .topicBlock,.grid.grid--center .grid__cell,.topicBlock{text-align:center}.grid .grid__cell{transition:.2s ease-in-out;-ms-flex:1 1 0;flex:1 1 0;padding:0 10px 20px}.grid.grid--collapsedVertical{margin-top:0;padding-top:0}.grid.grid--collapsedVertical>.grid__cell{padding-top:0;padding-bottom:0}section{width:100%;margin-left:auto;margin-right:auto;max-width:1440px}section::after{clear:both;content:"";display:table}.icon--phone{background:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/icons/global/phone.svg?u7b62634f=) center center no-repeat}.icon--mail{background:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/icons/global/mail.svg?u7b62634f=) center center no-repeat}.icon{display:inline-block;width:.875rem;height:.875rem;margin-top:1px;line-height:14px;vertical-align:text-top;background-size:contain}@font-face{font-family:Luxair;src:url(Luxair.ttf) format(truetype),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/iconfont/Luxair.woff?u7b62634f=) format(woff),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/iconfont/Luxair.svg?u7b62634f=) format(svg);font-weight:400;font-style:normal}[class*=" icon-"]{font-family:Luxair!important;speak:none;font-style:normal;font-weight:400;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.luxair strong{font-weight:500}.luxair a,a{text-decoration:none;cursor:pointer}.dropdown__items .dropdown__item:hover span,.dropdown__items a:hover span,.luxair a:hover,.socialMedia__icon,a:hover{text-decoration:underline}.text-left{text-align:left!important}.text-center{text-align:center!important}.button,.button__inner{transition:.2s ease-in-out;text-align:center;vertical-align:middle;cursor:pointer;border-radius:2px}.button{height:40px;position:relative}.button__inner{border:0;background:#026681;padding:7px 20px 10px;width:100%;height:100%;-webkit-appearance:none}.button__inner:hover{background:#0091b8;text-decoration:none}.button__inner:disabled{cursor:inherit}.horizontalLine{display:block;color:#eee9dd;border:0;width:calc(100% - 80px);line-height:1px;height:1px;margin-bottom:60px;margin-top:60px;max-width:1440px}.horizontalLine.horizontalLine--small{width:100%;background-color:#cccccc1a;margin:35px 0}.dropdown__icon{width:23px;position:relative;top:2px;height:15px;margin-right:6px}.dropdown__items,.tooltip__content{transition:.2s ease-in-out;min-width:100%;top:calc(100% + 15px);z-index:40;left:50%;transform:translateX(-50%);max-height:300px;white-space:nowrap}.dropdown__items{max-width:100%;display:none;overflow:hidden;position:absolute;line-height:1.75rem;text-align:left;height:auto;overflow:inherit;overflow-x:auto}.linkBlock,.tooltip__content{overflow:hidden;text-align:left}.dropdown__items .dropdown__item,.dropdown__items a{height:100%;display:block;font-size:.875rem;font-weight:400}.dropdown{cursor:pointer;display:inline-block;height:40px;line-height:40px;outline:0;padding:0 30px 0 10px;position:relative}.dropdown.dropdown--full{width:100%;max-width:100%}.dropdown:after,.inputTextSubmit .button--noLabel:after{position:absolute;top:50%;transform:translateY(-50%) rotate(135deg);content:"";width:8px;height:8px}.dropdown:after{border-top:1px solid #504d41;border-right:1px solid #504d41;margin-left:20px;margin-top:-2px;right:10px}.dropdown__selected{text-align:left;white-space:nowrap;font-size:.875rem}.inputTextSubmit .inputTextField{border-bottom-right-radius:0;border-top-right-radius:0;float:left;width:68%;font-size:.875rem}.inputTextSubmit .inputTextField--fullWidth{width:calc(100% - 40px)}.inputTextSubmit .button{font-size:.875rem;padding-left:10px;padding-right:10px;float:right;width:32%;text-align:center}.inputTextSubmit .button--noLabel{width:40px;padding:0}.inputTextSubmit .button--noLabel:after{border-top:1px solid #fff;border-right:1px solid #fff;left:50%;margin-left:-6px;margin-top:2px;transform:rotate(45deg) translate3d(-50%,-50%,0)}.inputTextField{background:#fff;color:#035066;padding:10px;margin:0;border:0;height:40px;width:100%;-webkit-appearance:none;border-radius:2px}.inputTextField--fullWidth{width:100%}.inputTextField:disabled{opacity:1;cursor:not-allowed}.linkBlock{font-weight:300;-ms-flex-wrap:wrap;flex-wrap:wrap;display:block;margin-bottom:20px}.linkBlock>h4,.linkBlock>p{text-align-last:left;float:left;width:100%}.linkBlock>h4{margin:12px 0;font-size:1.125rem;font-weight:600}.linkBlock>p,.tooltip__content a{font-weight:400;font-size:.875rem}.linkBlock>p{line-height:1.375rem;display:inline-block}section:target::before,span:target::before{content:"";display:block;height:40px;margin:-40px 0 0}.tooltip__content{display:none;position:absolute;line-height:1.75rem;height:auto;overflow:inherit;overflow-x:auto}.socialMedia__icon{border-radius:50%;margin-left:10px;display:inline-block;width:42px;height:42px;background:top center no-repeat;font-size:2rem;transition:.3s}.socialMedia__icon:hover{box-shadow:0 0 15px 5px #fff}.socialMedia__icon--twitter-round{background-image:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/social-media/logo-x-round.svg?u7b62634f=)}.socialMedia__icon--youtube-round{background-image:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/social-media/logo-youtube-round.svg?u7b62634f=)}.socialMedia__icon--facebook-round{background-image:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/social-media/logo-facebook-round.svg?u7b62634f=)}.socialMedia__icon--instagram-round{background-image:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/social-media/logo-instagram-round.svg?u7b62634f=)}.socialMedia__icon--tiktok-round{background-image:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/social-media/logo-tiktok.svg?u7b62634f=)}.ie_warning{display:none;padding:24px 40px;-ms-flex-pack:justify;justify-content:space-between;background-color:#fff0dd;color:#5a2309;max-height:90px}.ie_warning_body{display:-ms-flexbox;display:flex;font-size:16px}.ie_warning_content{padding-left:16px}.ie_warning_title{font-size:20px;font-weight:700}.ie_warning_icon{font-size:25px}.ie_warning_close_button{font-size:20px;cursor:pointer}.header{transition:.2s ease-in-out;max-height:74px;border-bottom:1px solid #eee9dd;background-color:#fff}.header__toTop{transition:.1s ease-in-out;position:fixed;width:100%;height:4px;z-index:100;box-shadow:0 0 4px #999;overflow:hidden;text-align:center}.header__toTop>a{text-decoration:none;display:none;color:#fff;font-size:.875rem}.header__close{transition:.2s ease-in-out;width:12px;height:12px;position:absolute;top:-80px;right:20px}.header__inner{transition:.2s ease-in-out;position:relative;max-width:1440px;margin:0 auto;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.header__countrylanguage,.header__sites{transition:.2s ease-in-out;box-sizing:border-box;max-height:0;height:auto;overflow:hidden}.header__countrylanguage h4,.header__sites h4{text-align:left;margin-bottom:17px}.header__countrylanguage{color:#504d41;background-color:#fff}.sites__headline{margin-bottom:36px}.sites__site__img{width:100%;margin-bottom:25px;background-size:cover}.sites__site__img:before{display:block;content:"";padding-top:56%}.logo{display:block;height:70px;background:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/logos/logo-luxairtours.svg?u7b62634f=) center center/70% no-repeat #fff}.nav,.nav__link__name{background-color:#fff}.logo--logo{width:90%;display:block;margin:10px auto auto}.nav__link--destinations .destinationContent,.switches_countrylanguage .dropdown .dropdown__selected span{display:none}.nav,.nav__link{height:70px;display:-ms-flexbox;display:flex}.nav{text-align:justify;-ms-flex-align:inherit;align-items:inherit;-ms-flex-pack:end;justify-content:flex-end;-ms-flex:1;flex:1}.nav__link{font-weight:400;text-decoration:none;color:#504d41;font-size:1rem;padding:0;-ms-flex-align:center;align-items:center}.nav__link--destinations .destinationContent .linkBlock,.nav__link--destinations .destinationContent .linkBlock h4{margin:0}.nav__link--destinations .destinationContent .megadropdown__subline:not(:first-child){margin-top:20px}.nav__link--destinations .destinationContent .linkBlock a{line-height:30px}.nav__link__name{transition:.2s ease-in-out;padding:0 15px;height:70px;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;cursor:pointer;border-bottom:4px solid #fff;border-top:4px solid #fff;border-radius:0;width:100%;-ms-flex-pack:center;justify-content:center}.footer__menu,.footer__part{border-bottom:1px solid #fff6}.nav__link__content__close,.nav__link__inner{transition:.2s ease-in-out;position:absolute}.nav__link__inner{display:none;width:100%;left:0;right:0;top:71px;z-index:15}.nav__link__content__close{width:12px;height:12px;right:20px;top:20px;cursor:pointer}.nav__link__content{padding:30px 100px}.nav__link__content.bgcolor-fuscousGray{font-weight:400;color:#a7a6a0}.nav__link__content.bgcolor-fuscousGray a{color:#fff;text-decoration:underline}.nav__link__content h3{margin-top:25px;display:inline-block}.switches,.switches__contact{display:-ms-flexbox;display:flex;-ms-flex-align:inherit;align-items:inherit;-ms-flex-pack:start;justify-content:flex-start}.switches__contact{-ms-flex-preferred-size:65px;flex-basis:65px;-ms-flex-align:center;align-items:center;height:40px;width:65px;-ms-flex-pack:distribute;justify-content:space-around}.switches__contact .tooltip__content{text-align:center;color:#000}.switches__contact .tooltip__content p{font-size:.875rem;line-height:1.25em}.switches__contact .tooltip__content .button__inner{margin-top:1em;display:inherit;width:inherit}.switches__mail,.switches__phone{position:relative;height:40px}.switches__mail .icon,.switches__phone .icon{width:18px;height:18px}.switches__mail,.switches__phone,.switches_countrylanguage,.switches_countrylanguage .dropdown{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center}.switches_countrylanguage{transition:.3s ease-in-out;cursor:pointer;white-space:nowrap;width:inherit;top:inherit;height:40px;position:relative;-ms-flex-pack:distribute;justify-content:space-around;background-color:#fff;left:inherit;margin:0}.switches_countrylanguage .dropdown{background:0 0;border:0;padding-right:0;line-height:inherit;height:inherit;padding-left:10px;font-size:inherit}.switches_countrylanguage .dropdown .dropdown__selected .dropdown__icon{top:2px}.switches_countrylanguage .dropdown .dropdown__items{max-width:initial}.footer{position:relative;overflow:hidden;color:#fff}.footer:before{content:"";position:absolute;top:1px;height:90px;margin:auto;left:-90px;right:-90px;border-top-left-radius:100%;border-top-right-radius:0}.footer:before,.footer__container{background:#ffb300}.footer__content{position:relative;max-width:1440px;margin:0 auto}.footer__logo{position:absolute;top:30px;right:35px;width:94px;height:24px;background:url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/logos/logo-luxairtours-white.svg?u7b62634f=) center center no-repeat}.footer__menu{padding:30px 120px 30px 15px;font-size:.875rem}.footer__menu__item{float:left;display:block;padding:0 20px}.footer__menu__item a{color:#fff;text-decoration:none}.footer__part{border-top:1px solid #fff6;position:relative}.footer__part .payment_method .grid__cell{min-width:75px}.footer__part__info .topicBlock.col_1{margin-top:-15px;padding:0 80px 0 0}.footer__part__info .topicBlock.col_1 .button,.footer__part__info .topicBlock.col_1 .inputTextField{height:30px}.footer__part__info .topicBlock.col_2{padding:0 80px}.footer__part__info .topicBlock.col_3{padding:0 0 0 80px;margin-top:-15px}.footer__part__info .topicBlock.col_3 .grid{-ms-flex-pack:end;justify-content:flex-end}.footer__part__content{transition:.2s ease-in-out;height:0;overflow:hidden}.footer__part.active .footer__part__content{height:auto;padding:0;margin:auto}.footer__link,a.footer__link{color:#fff;line-height:1.5rem}.footer__copyRight{font-size:.75rem;padding-top:30px;padding-bottom:0;margin-bottom:-25px}.footer__links,.megadropdown__subline{font-size:.875rem}.button .button__inner,.footer__links a,.header__sites,.sites__site__link{color:#fff}.dropdown__items .dropdown__item:hover,.dropdown__items a:hover,.linkBlock,.linkBlock:hover,.nav__link a.nav__link__name:hover,.tooltip__content a:hover{text-decoration:none}.dropdown:before,.tooltip:before{display:none;content:"";position:absolute}.footer__menu::after,.inputTextSubmit::after,.linkBlock::after{clear:both;content:"";display:table}:-ms-input-placeholder,::-webkit-input-placeholder{color:#aba594}:-moz-placeholder,::-moz-placeholder{color:#aba594;opacity:1}.footer__part__info,.ie_warning,.ie_warning_body{-ms-flex-align:center;align-items:center}.nav__link--destinations .destinationContent .megadropdown__subline,.nav__link--destinations .destinationContent.active{display:block}.footer__menu__item:before,.switches_countrylanguage .dropdown:after{content:none}@media (min-width:0){.grid .grid__cell--xs-6{-ms-flex:auto;flex:auto;width:50%}.grid .grid__cell--xs-12{-ms-flex:auto;flex:auto;width:100%}h3{font-size:22px;line-height:1.136em}h4{font-size:18px;line-height:1.111em}.dropdown__items,.tooltip__content{padding:10px}.dropdown__items .dropdown__item,.dropdown__items a{padding:0 10px}}@media (min-width:768px){.grid .grid__cell--s-4,.grid .grid__cell--s-6{-ms-flex:auto;flex:auto;width:33.33333%}.grid .grid__cell--s-6{width:50%}section{padding:0 40px}.luxair{line-height:1.375em}}@media (min-width:1024px){h3{font-size:24px;line-height:1.25em}h4{line-height:1.222em}.dropdown__items,.tooltip__content{padding:20px}.header__inner{padding-right:50px}.logo{background-image:none;background-size:auto}:root{--ld--primary-margin:32px;--ld--secondary-margin:16px;--ld--tertiary-margin:12px}}@media (min-width:1280px){h3{font-size:28px}.switches{text-align:right;margin-right:0;width:inherit;height:inherit}}@media (min-width:0) and (max-width:767px){section{padding:0 20px}.luxair{line-height:1.25em}.inputTextField{width:100%}.nav__link__inner{position:relative;top:0}.nav__link__content{padding:20px}.footer__logo{top:0;left:0;right:0;width:100%}.footer__menu{padding:50px 0 0;font-size:1.125rem}.footer__menu__item{float:none;text-align:center;margin-bottom:30px}.footer__copyRight,.footer__links{font-size:1rem}}@media (min-width:1024px) and (max-width:1279px){.nav__link__name{padding:0 8px}}@media (min-width:768px) and (max-width:839px){.socialMedia__container{padding:0 2em}}@media (min-width:0) and (max-width:1023px){.header__inner{-ms-flex-pack:justify;justify-content:space-between;display:block}.logo{-ms-flex:initial;flex:initial;width:100px;background:url(/modules/proprietary/luxair_styleguide/build/images/logos/logos/logo-luxair.svg?u7c42e426=) 20px center no-repeat #fff}.logo--logo,.nav{display:none}.nav{padding:0}.nav__link{width:100%;height:auto;display:block}.switches{position:absolute;top:0;right:0}}@media (min-width:0) and (max-width:1279px){.footer__part .payment_method{-ms-flex-pack:center;justify-content:center}.footer__part__info .topicBlock.col_1{padding:0}}@media (min-width:0) and (max-width:1439px){.footer__part__info .topicBlock.col_2,.footer__part__info .topicBlock.col_3{padding:0}.footer__part__info .topicBlock.col_3 .grid{-ms-flex-pack:center;justify-content:center}}body[data-theme=luxair]{--ld-categories--color-primary:#0091b8;--ld-categories--color-active:#026681}@media (min-width:768px) and (max-width:1023px){:root{--ld--primary-margin:24px;--ld--secondary-margin:12px;--ld--tertiary-margin:8px}}@media (max-width:767px){:root{--ld--primary-margin:16px;--ld--secondary-margin:12px;--ld--tertiary-margin:8px}}body{font-family:"Exo 2",sans-serif}*,:after,:before{box-sizing:inherit}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.luxair{font:400 16px "Exo 2",sans-serif}.luxair *{font-style:normal!important;font-weight:400}.header .header__countrylanguage .sites__headline,.header .header__countrylanguage h4,.luxair a{color:#035066}.bgcolor-pampas{background-color:#f5f5f5}.bgcolor-fuscousGray{background-color:#04242f}.button__inner{border-radius:0;background-color:#035066;color:#fff}.button__inner:hover{background-color:#368399}.button__inner:disabled{opacity:1;background:#b1c3ca}.dropdown{z-index:auto!important}.dropdown:before,.tooltip:before{border:0;background:#fff;right:calc(50% - 5px);border-top:1px solid #ccc;border-right:1px solid #ccc;bottom:-21px;height:10px;width:10px;z-index:41;transform:rotate(-45deg)}.dropdown,.dropdown__items{background-color:#fff;border:1px solid #ccc;border-radius:0}.horizontalLine{background-color:#ccc}.inputTextSubmit .inputTextField,.tooltip__content{border:1px solid #ccc}.tooltip__content{background-color:#fff;border-radius:0}.footer a,.header .sites__site__link,.header__toTop a,.tooltip__content a{color:#fff}.footer{margin-top:60px;padding-top:0}.footer:before{background-color:transparent}.footer__copyRight{opacity:.4;color:#fff}.footer__logo{background-image:url(/modules/proprietary/luxair_styleguide/build/images/logos/logos/logo-luxair-white.svg?u7c42e426=)}.footer__part__content{width:60%}.header{border-color:#ccc}.logo{-ms-flex:140px 0 0;flex:140px 0 0}.logo--logo{margin-top:15px}.logo.darksite--logo{display:none}.nav__link__name,a.nav__link__name{color:#0090b8}.nav__link__name:hover,a.nav__link__name:hover{border-bottom:4px solid #0090b8}.switches .icon--phone{background-image:url(/modules/proprietary/luxair_styleguide/build/images/icons/global/lg/phone.svg?u7c42e426=)}.switches .icon--mail{background-image:url(/modules/proprietary/luxair_styleguide/build/images/icons/global/lg/mail.svg?u7c42e426=)}.hdB--wrapper{position:absolute;background-color:#fff;z-index:100;width:100%;height:10px;overflow:hidden}.hdB--base{width:90%;height:27px;background:linear-gradient(to right,#0091b8,#fff)}.hdB--overlay,.red__container{position:absolute;height:27px;transition:left 1s}.hdB--overlay{left:77px;z-index:100;width:25%;background-color:#0091b8;background:linear-gradient(to right,#0091b8,#0091b8,transparent);transform:skew(-50deg)}.red__container{left:-60px;overflow:hidden;width:150px}.hdB__red--start{z-index:0;position:absolute;height:27px;width:40px;background-color:#71020e}.hdB__red--base{z-index:20;width:91px;transform:skew(-60deg);background:linear-gradient(to right,#71020e 5%,#e2003b 70%)}.hdB__red--base,.white__1,.white__container{position:absolute;height:27px}.white__container{left:-60px;overflow:hidden;width:200px;transition:left 1s,width 1s}.white__1{left:89px;z-index:47;width:30px;background:linear-gradient(to right,#fff,transparent);transform:skew(-55deg)}.white__11{position:absolute;height:12px;top:15px;width:7px;z-index:30;left:76px;transform:skew(-63deg);background-color:#fff}.white__2{position:absolute;transform:skew(-46deg);left:133px;height:27px;width:51px;z-index:45;background:linear-gradient(to right,transparent,#fff,transparent)}.white__3{position:absolute;width:0;left:149px;height:26px;z-index:41;background:linear-gradient(to right,transparent,#ffccf5b3);transform:skew(-65deg);transition:width 1s}.white__4{position:absolute;z-index:44;width:20px;left:151px;height:10px;top:17px;background:linear-gradient(to bottom,transparent,#fff);transform:skew(-70deg)}.white__topBar,.white__topBarAbove{position:absolute;width:70px;z-index:20;transform:skew(-55deg)}.white__topBarAbove{height:7px;left:102px;background:linear-gradient(#fff,#ffebfacc,#ffe0f5cc)}.white__topBar{height:25px;left:82px;top:7px;background:linear-gradient(#ffe0f5cc,#ffe0f5b3,#ffe0f580,transparent)}.white__left{position:absolute;left:90px;transform:skew(-50deg);width:11px;height:27px;z-index:60;background:linear-gradient(to right,#fff,transparent)}.footer__container,.header__toTop{background-color:#0090b8}@media (min-width:0) and (max-width:767px){.footer__part__content{width:100%}}@media (min-width:1024px){.logo{background-image:none;background-size:auto}}@media only screen and (min-width:450px){.hdB--overlay{left:132px}.red__container{left:-30px}.white__container{left:-30px;width:250px}}@media only screen and (min-width:800px){.hdB--overlay{left:194px;transform:skew(-63deg)}.red__container{left:0}.white__container{left:0;width:300px}.white__3{width:42px}}
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+.button, .dropdown, .dropdown__items, .grid .grid__cell, .ie_warning, .inputTextField, .nav, .nav__link__inner, .nav__link__name, .switches_countrylanguage .dropdown, .tooltip__content, html, section {
+	box-sizing: border-box
+}
+
+@media (max-width:1023px) {
+	div.myluxair-menu .nav__link__name {
+		height: 48px;
+		padding: 12px 16px;
+		box-sizing: border-box
+	}
+}
+
+:root {
+	--ldo--color-primary: #ffb300;
+	--ldo--color-primary-faded: #ffd980;
+	--ldo--color-active: #ff9a00;
+	--ld--color-text: #504d41;
+	--ldo--color-primary: #0091b8;
+	--ldo--color-primary-faded: #80c8dc;
+	--ldo--color-secondary: #026681;
+	--ldo--color-active: #026681;
+	--ldo--color-text: #504d41;
+	--ldo--le-jaune: #ffb300;
+	--ldo--le-bleu: #0091b8
+}
+
+html {
+	color: #000;
+	background: #fff;
+	-webkit-text-size-adjust: 100%;
+	--mat-option-selected-state-label-text-color: #0091b8;
+	--mat-option-label-text-color: #000000de;
+	--mat-option-hover-state-layer-color: #0000000a;
+	--mat-option-focus-state-layer-color: #0000000a;
+	--mat-option-selected-state-layer-color: #0000000a;
+	--mat-optgroup-label-text-color: #000000de;
+	--mdc-filled-text-field-caret-color: #0091b8;
+	--mdc-filled-text-field-focus-active-indicator-color: #0091b8;
+	--mdc-filled-text-field-focus-label-text-color: #0091b8de;
+	--mdc-filled-text-field-container-color: #f5f5f5;
+	--mdc-filled-text-field-disabled-container-color: #fafafa;
+	--mdc-filled-text-field-label-text-color: #0009;
+	--mdc-filled-text-field-disabled-label-text-color: #00000061;
+	--mdc-filled-text-field-input-text-color: #000000de;
+	--mdc-filled-text-field-disabled-input-text-color: #00000061;
+	--mdc-filled-text-field-input-text-placeholder-color: #0009;
+	--mdc-filled-text-field-error-focus-label-text-color: #e2003b;
+	--mdc-filled-text-field-error-label-text-color: #e2003b;
+	--mdc-filled-text-field-error-caret-color: #e2003b;
+	--mdc-filled-text-field-active-indicator-color: #0000006b;
+	--mdc-filled-text-field-disabled-active-indicator-color: #0000000f;
+	--mdc-filled-text-field-hover-active-indicator-color: #000000de;
+	--mdc-filled-text-field-error-active-indicator-color: #e2003b;
+	--mdc-filled-text-field-error-focus-active-indicator-color: #e2003b;
+	--mdc-filled-text-field-error-hover-active-indicator-color: #e2003b;
+	--mdc-outlined-text-field-caret-color: #0091b8;
+	--mdc-outlined-text-field-focus-outline-color: #0091b8;
+	--mdc-outlined-text-field-focus-label-text-color: #0091b8de;
+	--mdc-outlined-text-field-label-text-color: #0009;
+	--mdc-outlined-text-field-disabled-label-text-color: #00000061;
+	--mdc-outlined-text-field-input-text-color: #000000de;
+	--mdc-outlined-text-field-disabled-input-text-color: #00000061;
+	--mdc-outlined-text-field-input-text-placeholder-color: #0009;
+	--mdc-outlined-text-field-error-caret-color: #e2003b;
+	--mdc-outlined-text-field-error-focus-label-text-color: #e2003b;
+	--mdc-outlined-text-field-error-label-text-color: #e2003b;
+	--mdc-outlined-text-field-outline-color: #00000061;
+	--mdc-outlined-text-field-disabled-outline-color: #0000000f;
+	--mdc-outlined-text-field-hover-outline-color: #000000de;
+	--mdc-outlined-text-field-error-focus-outline-color: #e2003b;
+	--mdc-outlined-text-field-error-hover-outline-color: #e2003b;
+	--mdc-outlined-text-field-error-outline-color: #e2003b;
+	--mat-form-field-disabled-input-text-placeholder-color: #00000061;
+	--mat-select-panel-background-color: #fff;
+	--mat-select-enabled-trigger-text-color: #000000de;
+	--mat-select-disabled-trigger-text-color: #00000061;
+	--mat-select-placeholder-text-color: #0009;
+	--mat-select-enabled-arrow-color: #0000008a;
+	--mat-select-disabled-arrow-color: #00000061;
+	--mat-select-focused-arrow-color: #0091b8de;
+	--mat-select-invalid-arrow-color: #e2003bde;
+	--mat-autocomplete-background-color: #fff;
+	--mat-menu-item-label-text-color: #000000de;
+	--mat-menu-item-icon-color: #000000de;
+	--mat-menu-item-hover-state-layer-color: #0000000a;
+	--mat-menu-item-focus-state-layer-color: #0000000a;
+	--mat-menu-container-color: #fff;
+	--mat-paginator-container-text-color: #000000de;
+	--mat-paginator-container-background-color: #fff;
+	--mat-paginator-enabled-icon-color: #0000008a;
+	--mat-paginator-disabled-icon-color: #0000001f;
+	--mat-paginator-container-size: 56px;
+	--mdc-checkbox-disabled-selected-icon-color: #00000061;
+	--mdc-checkbox-disabled-unselected-icon-color: #00000061;
+	--mdc-checkbox-selected-checkmark-color: #fff;
+	--mdc-checkbox-selected-focus-icon-color: #0091b8;
+	--mdc-checkbox-selected-hover-icon-color: #0091b8;
+	--mdc-checkbox-selected-icon-color: #0091b8;
+	--mdc-checkbox-selected-pressed-icon-color: #0091b8;
+	--mdc-checkbox-unselected-focus-icon-color: #212121;
+	--mdc-checkbox-unselected-hover-icon-color: #212121;
+	--mdc-checkbox-unselected-icon-color: #0000008a;
+	--mdc-checkbox-unselected-pressed-icon-color: #0000008a;
+	--mdc-checkbox-selected-focus-state-layer-color: #0091b8;
+	--mdc-checkbox-selected-hover-state-layer-color: #0091b8;
+	--mdc-checkbox-selected-pressed-state-layer-color: #0091b8;
+	--mdc-checkbox-unselected-focus-state-layer-color: #000;
+	--mdc-checkbox-unselected-hover-state-layer-color: #000;
+	--mdc-checkbox-unselected-pressed-state-layer-color: #000;
+	--mdc-checkbox-state-layer-size: 40px;
+	--mat-table-background-color: #fff;
+	--mat-table-header-headline-color: #000000de;
+	--mat-table-row-item-label-text-color: #000000de;
+	--mat-table-row-item-outline-color: #0000001f;
+	--mat-table-header-container-height: 56px;
+	--mat-table-footer-container-height: 52px;
+	--mat-table-row-item-container-height: 52px;
+	--mat-badge-background-color: #0091b8;
+	--mat-badge-text-color: #fff;
+	--mat-badge-disabled-state-background-color: #b9b9b9;
+	--mat-badge-disabled-state-text-color: #00000061;
+	--mat-bottom-sheet-container-text-color: #000000de;
+	--mat-bottom-sheet-container-background-color: #fff;
+	--mat-legacy-button-toggle-text-color: #00000061;
+	--mat-legacy-button-toggle-state-layer-color: #0000001f;
+	--mat-legacy-button-toggle-selected-state-text-color: #0000008a;
+	--mat-legacy-button-toggle-selected-state-background-color: #e0e0e0;
+	--mat-legacy-button-toggle-disabled-state-text-color: #00000042;
+	--mat-legacy-button-toggle-disabled-state-background-color: #eee;
+	--mat-legacy-button-toggle-disabled-selected-state-background-color: #bdbdbd;
+	--mat-standard-button-toggle-text-color: #000000de;
+	--mat-standard-button-toggle-background-color: #fff;
+	--mat-standard-button-toggle-state-layer-color: #000;
+	--mat-standard-button-toggle-selected-state-background-color: #e0e0e0;
+	--mat-standard-button-toggle-selected-state-text-color: #000000de;
+	--mat-standard-button-toggle-disabled-state-text-color: #00000042;
+	--mat-standard-button-toggle-disabled-state-background-color: #fff;
+	--mat-standard-button-toggle-disabled-selected-state-text-color: #000000de;
+	--mat-standard-button-toggle-disabled-selected-state-background-color: #bdbdbd;
+	--mat-standard-button-toggle-divider-color: #e0e0e0;
+	--mat-standard-button-toggle-height: 48px;
+	--mat-datepicker-calendar-date-selected-state-text-color: #fff;
+	--mat-datepicker-calendar-date-selected-state-background-color: #0091b8;
+	--mat-datepicker-calendar-date-selected-disabled-state-background-color: #0091b866;
+	--mat-datepicker-calendar-date-today-selected-state-outline-color: #fff;
+	--mat-datepicker-calendar-date-focus-state-background-color: #0091b84d;
+	--mat-datepicker-calendar-date-hover-state-background-color: #0091b84d;
+	--mat-datepicker-toggle-active-state-icon-color: #0091b8;
+	--mat-datepicker-calendar-date-in-range-state-background-color: #0091b833;
+	--mat-datepicker-calendar-date-in-comparison-range-state-background-color: #f9ab0033;
+	--mat-datepicker-calendar-date-in-overlap-range-state-background-color: #a8dab5;
+	--mat-datepicker-calendar-date-in-overlap-range-selected-state-background-color: #46a35e;
+	--mat-datepicker-toggle-icon-color: #0000008a;
+	--mat-datepicker-calendar-body-label-text-color: #0000008a;
+	--mat-datepicker-calendar-period-button-icon-color: #0000008a;
+	--mat-datepicker-calendar-navigation-button-icon-color: #0000008a;
+	--mat-datepicker-calendar-header-divider-color: #0000001f;
+	--mat-datepicker-calendar-header-text-color: #0000008a;
+	--mat-datepicker-calendar-date-today-outline-color: #00000061;
+	--mat-datepicker-calendar-date-today-disabled-state-outline-color: #0000002e;
+	--mat-datepicker-calendar-date-text-color: #000000de;
+	--mat-datepicker-calendar-date-outline-color: transparent;
+	--mat-datepicker-calendar-date-disabled-state-text-color: #00000061;
+	--mat-datepicker-calendar-date-preview-state-outline-color: #0000003d;
+	--mat-datepicker-range-input-separator-color: #000000de;
+	--mat-datepicker-range-input-disabled-state-separator-color: #00000061;
+	--mat-datepicker-range-input-disabled-state-text-color: #00000061;
+	--mat-datepicker-calendar-container-background-color: #fff;
+	--mat-datepicker-calendar-container-text-color: #000000de;
+	--mat-divider-color: #0000001f;
+	--mat-expansion-container-background-color: #fff;
+	--mat-expansion-container-text-color: #000000de;
+	--mat-expansion-actions-divider-color: #0000001f;
+	--mat-expansion-header-hover-state-layer-color: #0000000a;
+	--mat-expansion-header-focus-state-layer-color: #0000000a;
+	--mat-expansion-header-disabled-state-text-color: #00000042;
+	--mat-expansion-header-text-color: #000000de;
+	--mat-expansion-header-description-color: #0000008a;
+	--mat-expansion-header-indicator-color: #0000008a;
+	--mat-expansion-header-collapsed-state-height: 48px;
+	--mat-expansion-header-expanded-state-height: 64px;
+	--mat-icon-color: inherit;
+	--mat-sidenav-container-divider-color: #0000001f;
+	--mat-sidenav-container-background-color: #fff;
+	--mat-sidenav-container-text-color: #000000de;
+	--mat-sidenav-content-background-color: #fafafa;
+	--mat-sidenav-content-text-color: #000000de;
+	--mat-sidenav-scrim-color: #0009;
+	--mat-stepper-header-icon-foreground-color: #fff;
+	--mat-stepper-header-selected-state-icon-background-color: #0091b8;
+	--mat-stepper-header-selected-state-icon-foreground-color: #fff;
+	--mat-stepper-header-done-state-icon-background-color: #0091b8;
+	--mat-stepper-header-done-state-icon-foreground-color: #fff;
+	--mat-stepper-header-edit-state-icon-background-color: #0091b8;
+	--mat-stepper-header-edit-state-icon-foreground-color: #fff;
+	--mat-stepper-container-color: #fff;
+	--mat-stepper-line-color: #0000001f;
+	--mat-stepper-header-hover-state-layer-color: #0000000a;
+	--mat-stepper-header-focus-state-layer-color: #0000000a;
+	--mat-stepper-header-label-text-color: #0000008a;
+	--mat-stepper-header-optional-label-text-color: #0000008a;
+	--mat-stepper-header-selected-state-label-text-color: #000000de;
+	--mat-stepper-header-error-state-label-text-color: #e2003b;
+	--mat-stepper-header-icon-background-color: #0000008a;
+	--mat-stepper-header-error-state-icon-foreground-color: #e2003b;
+	--mat-stepper-header-error-state-icon-background-color: transparent;
+	--mat-stepper-header-height: 72px;
+	--mat-toolbar-container-background-color: #f5f5f5;
+	--mat-toolbar-container-text-color: #000000de;
+	--mat-toolbar-standard-height: 64px;
+	--mat-toolbar-mobile-height: 56px;
+	--mat-badge-text-font: "Exo 2",sans-serif;
+	--mat-badge-text-size: 12px;
+	--mat-badge-text-weight: 600;
+	--mat-badge-small-size-text-size: 9px;
+	--mat-badge-large-size-text-size: 24px;
+	--mat-bottom-sheet-container-text-font: "Exo 2",sans-serif;
+	--mat-bottom-sheet-container-text-line-height: 24px;
+	--mat-bottom-sheet-container-text-size: 16px;
+	--mat-bottom-sheet-container-text-tracking: normal;
+	--mat-bottom-sheet-container-text-weight: 400;
+	--mat-legacy-button-toggle-text-font: "Exo 2",sans-serif;
+	--mat-standard-button-toggle-text-font: "Exo 2",sans-serif;
+	--mat-datepicker-calendar-text-font: "Exo 2",sans-serif;
+	--mat-datepicker-calendar-text-size: 13px;
+	--mat-datepicker-calendar-body-label-text-size: 14px;
+	--mat-datepicker-calendar-body-label-text-weight: 500;
+	--mat-datepicker-calendar-period-button-text-size: 14px;
+	--mat-datepicker-calendar-period-button-text-weight: 500;
+	--mat-datepicker-calendar-header-text-size: 11px;
+	--mat-datepicker-calendar-header-text-weight: 400;
+	--mat-expansion-header-text-font: "Exo 2",sans-serif;
+	--mat-expansion-header-text-size: 14px;
+	--mat-expansion-header-text-weight: 500;
+	--mat-expansion-header-text-line-height: inherit;
+	--mat-expansion-header-text-tracking: inherit;
+	--mat-expansion-container-text-font: "Exo 2",sans-serif;
+	--mat-expansion-container-text-line-height: 24px;
+	--mat-expansion-container-text-size: 16px;
+	--mat-expansion-container-text-tracking: normal;
+	--mat-expansion-container-text-weight: 400;
+	--mat-grid-list-tile-header-primary-text-size: 16px;
+	--mat-grid-list-tile-header-secondary-text-size: 12px;
+	--mat-grid-list-tile-footer-primary-text-size: 16px;
+	--mat-grid-list-tile-footer-secondary-text-size: 12px;
+	--mat-stepper-container-text-font: "Exo 2",sans-serif;
+	--mat-stepper-header-label-text-font: "Exo 2",sans-serif;
+	--mat-stepper-header-label-text-size: 16px;
+	--mat-stepper-header-label-text-weight: 400;
+	--mat-stepper-header-error-state-label-text-size: 16px;
+	--mat-stepper-header-selected-state-label-text-size: 16px;
+	--mat-stepper-header-selected-state-label-text-weight: 400;
+	--mat-toolbar-title-text-font: "Exo 2",sans-serif;
+	--mat-toolbar-title-text-line-height: 32px;
+	--mat-toolbar-title-text-size: 20px;
+	--mat-toolbar-title-text-tracking: .0125em;
+	--mat-toolbar-title-text-weight: 500;
+	--mat-option-label-text-font: "Exo 2",sans-serif;
+	--mat-option-label-text-line-height: 24px;
+	--mat-option-label-text-size: 16px;
+	--mat-option-label-text-tracking: .03125em;
+	--mat-option-label-text-weight: 400;
+	--mat-optgroup-label-text-font: "Exo 2",sans-serif;
+	--mat-optgroup-label-text-line-height: 24px;
+	--mat-optgroup-label-text-size: 16px;
+	--mat-optgroup-label-text-tracking: .03125em;
+	--mat-optgroup-label-text-weight: 400;
+	--mdc-filled-text-field-label-text-font: "Exo 2",sans-serif;
+	--mdc-filled-text-field-label-text-size: 16px;
+	--mdc-filled-text-field-label-text-tracking: .03125em;
+	--mdc-filled-text-field-label-text-weight: 400;
+	--mdc-outlined-text-field-label-text-font: "Exo 2",sans-serif;
+	--mdc-outlined-text-field-label-text-size: 16px;
+	--mdc-outlined-text-field-label-text-tracking: .03125em;
+	--mdc-outlined-text-field-label-text-weight: 400;
+	--mat-form-field-container-text-font: "Exo 2",sans-serif;
+	--mat-form-field-container-text-line-height: 24px;
+	--mat-form-field-container-text-size: 16px;
+	--mat-form-field-container-text-tracking: .03125em;
+	--mat-form-field-container-text-weight: 400;
+	--mat-form-field-outlined-label-text-populated-size: 16px;
+	--mat-form-field-subscript-text-font: "Exo 2",sans-serif;
+	--mat-form-field-subscript-text-line-height: 20px;
+	--mat-form-field-subscript-text-size: 12px;
+	--mat-form-field-subscript-text-tracking: .0333333333em;
+	--mat-form-field-subscript-text-weight: 400;
+	--mat-select-trigger-text-font: "Exo 2",sans-serif;
+	--mat-select-trigger-text-line-height: 24px;
+	--mat-select-trigger-text-size: 16px;
+	--mat-select-trigger-text-tracking: .03125em;
+	--mat-select-trigger-text-weight: 400;
+	--mat-menu-item-label-text-font: "Exo 2",sans-serif;
+	--mat-menu-item-label-text-size: 16px;
+	--mat-menu-item-label-text-tracking: .03125em;
+	--mat-menu-item-label-text-line-height: 24px;
+	--mat-menu-item-label-text-weight: 400;
+	--mat-paginator-container-text-font: "Exo 2",sans-serif;
+	--mat-paginator-container-text-line-height: 20px;
+	--mat-paginator-container-text-size: 12px;
+	--mat-paginator-container-text-tracking: .0333333333em;
+	--mat-paginator-container-text-weight: 400;
+	--mat-paginator-select-trigger-text-size: 12px;
+	--mat-table-header-headline-font: "Exo 2",sans-serif;
+	--mat-table-header-headline-line-height: 22px;
+	--mat-table-header-headline-size: 14px;
+	--mat-table-header-headline-weight: 500;
+	--mat-table-header-headline-tracking: .0071428571em;
+	--mat-table-row-item-label-text-font: "Exo 2",sans-serif;
+	--mat-table-row-item-label-text-line-height: 24px;
+	--mat-table-row-item-label-text-size: 16px;
+	--mat-table-row-item-label-text-weight: 400;
+	--mat-table-row-item-label-text-tracking: normal;
+	--mat-table-footer-supporting-text-font: "Exo 2",sans-serif;
+	--mat-table-footer-supporting-text-line-height: 24px;
+	--mat-table-footer-supporting-text-size: 16px;
+	--mat-table-footer-supporting-text-weight: 400;
+	--mat-table-footer-supporting-text-tracking: normal;
+	-ms-overflow-style: scrollbar
+}
+
+body, div, form, h3, h4, input, li, p, ul {
+	margin: 0;
+	padding: 0
+}
+
+img {
+	border: 0
+}
+
+strong {
+	font-style: normal;
+	font-weight: 600
+}
+
+ul {
+	list-style: none
+}
+
+h3, h4 {
+	font-size: 100%;
+	font-weight: 400
+}
+
+input {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit
+}
+
+::-ms-clear {
+	display: none
+}
+
+.color-leblue {
+	color: #0091b8
+}
+
+.color-invalid {
+	color: #b60218
+}
+
+.color-fuscousGray, a {
+	color: #504d41
+}
+
+@font-face {
+	font-family: "Exo 2";
+	src: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-light.woff?u7b62634f=) format(woff);
+	font-weight: 300
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: normal;
+	font-weight: 300;
+	src: local("Exo 2"),local(Exo2-Regular),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-light-latinext.woff2?u7b62634f=) format(woff2);
+	unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: normal;
+	font-weight: 300;
+	src: local("Exo 2"),local(Exo2-Regular),url(https://fonts.gstatic.com/s/exo2/v9/7cHmv4okm5zmbtYoK-4.woff2) format(woff2);
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+}
+
+@font-face {
+	font-family: "Exo 2";
+	src: url(exo2-regular.woff) format(woff);
+	font-weight: 400
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Exo 2"),local(Exo2-Regular),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-regular-latinext.woff2?u7b62634f=) format(woff2);
+	unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Exo 2"),local(Exo2-Regular),url(https://fonts.gstatic.com/s/exo2/v9/7cHmv4okm5zmbtYoK-4.woff2) format(woff2);
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+}
+
+@font-face {
+	font-family: "Exo 2";
+	src: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-regular-italic.woff?u7b62634f=) format(woff);
+	font-style: italic;
+	font-weight: 400
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: italic;
+	font-weight: 400;
+	src: local("Exo 2 Italic"),local(Exo2-Italic),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-regular-italic-latinext.woff2?u7b62634f=) format(woff2);
+	unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: italic;
+	font-weight: 400;
+	src: local("Exo 2 Italic"),local(Exo2-Italic),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-regular-italic-latin.woff2?u7b62634f=) format(woff2);
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+}
+
+@font-face {
+	font-family: "Exo 2";
+	src: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-medium.woff?u7b62634f=) format(woff);
+	font-weight: 500
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: normal;
+	font-weight: 500;
+	src: local("Exo 2"),local(Exo2-Regular),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-medium-latinext.woff2?u7b62634f=) format(woff2);
+	unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: normal;
+	font-weight: 500;
+	src: local("Exo 2"),local(Exo2-Regular),url(https://fonts.gstatic.com/s/exo2/v9/7cHmv4okm5zmbtYoK-4.woff2) format(woff2);
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-weight: 600;
+	src: local("Exo 2 Semi Bold"),local(Exo2-SemiBold),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-semibold-latinext.woff2?u7b62634f=) format(woff2);
+	unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-weight: 600;
+	src: local("Exo 2 Semi Bold"),local(Exo2-SemiBold),url(https://fonts.gstatic.com/s/exo2/v9/7cHmv4okm5zmbtYoK-4.woff2) format(woff2);
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: italic;
+	font-weight: 600;
+	src: local("Exo 2 Semi Bold Italic"),local(Exo2-SemiBoldItalic),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-semibold-italic.woff?u7b62634f=) format(woff)
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: italic;
+	font-weight: 600;
+	src: local("Exo 2 Semi Bold Italic"),local(Exo2-SemiBoldItalic),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-semibold-italic-latinext.woff2?u7b62634f=) format(woff2);
+	unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+}
+
+@font-face {
+	font-family: "Exo 2";
+	font-style: italic;
+	font-weight: 600;
+	src: local("Exo 2 Semi Bold Italic"),local(Exo2-SemiBoldItalic),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/exo2-semibold-italic-latin.woff2?u7b62634f=) format(woff2);
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+}
+
+.grid {
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0-10px;
+	padding-top: 20px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.grid.grid--center {
+	-ms-flex-pack: center;
+	justify-content: center
+}
+
+.footer__copyRight, .footer__links, .footer__part, .footer__part__info .topicBlock, .grid.grid--center .grid__cell, .topicBlock {
+	text-align: center
+}
+
+.grid .grid__cell {
+	transition: .2s ease-in-out;
+	-ms-flex: 1 1 0;
+	flex: 1 1 0;
+	padding: 0 10px 20px
+}
+
+.grid.grid--collapsedVertical {
+	margin-top: 0;
+	padding-top: 0
+}
+
+.grid.grid--collapsedVertical > .grid__cell {
+	padding-top: 0;
+	padding-bottom: 0
+}
+
+section {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1440px
+}
+
+section::after {
+	clear: both;
+	content: "";
+	display: table
+}
+
+.icon--phone {
+	background: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/icons/global/phone.svg?u7b62634f=) center center no-repeat
+}
+
+.icon--mail {
+	background: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/icons/global/mail.svg?u7b62634f=) center center no-repeat
+}
+
+.icon {
+	display: inline-block;
+	width: .875rem;
+	height: .875rem;
+	margin-top: 1px;
+	line-height: 14px;
+	vertical-align: text-top;
+	background-size: contain
+}
+
+@font-face {
+	font-family: Luxair;
+	src: url(Luxair.ttf) format(truetype),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/iconfont/Luxair.woff?u7b62634f=) format(woff),url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/fonts/iconfont/Luxair.svg?u7b62634f=) format(svg);
+	font-weight: 400;
+	font-style: normal
+}
+
+[class*=" icon-"] {
+	font-family: Luxair !important;
+	speak: none;
+	font-style: normal;
+	font-weight: 400;
+	font-feature-settings: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.luxair strong {
+	font-weight: 500
+}
+
+.luxair a, a {
+	text-decoration: none;
+	cursor: pointer
+}
+
+.dropdown__items .dropdown__item:hover span, .dropdown__items a:hover span, .luxair a:hover, .socialMedia__icon, a:hover {
+	text-decoration: underline
+}
+
+.text-left {
+	text-align: left !important
+}
+
+.text-center {
+	text-align: center !important
+}
+
+.button, .button__inner {
+	transition: .2s ease-in-out;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border-radius: 2px
+}
+
+.button {
+	height: 40px;
+	position: relative
+}
+
+.button__inner {
+	border: 0;
+	background: #026681;
+	padding: 7px 20px 10px;
+	width: 100%;
+	height: 100%;
+	-webkit-appearance: none
+}
+
+.button__inner:hover {
+	background: #0091b8;
+	text-decoration: none
+}
+
+.button__inner:disabled {
+	cursor: inherit
+}
+
+.horizontalLine {
+	display: block;
+	color: #eee9dd;
+	border: 0;
+	width: calc(100% - 80px);
+	line-height: 1px;
+	height: 1px;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	max-width: 1440px
+}
+
+.horizontalLine.horizontalLine--small {
+	width: 100%;
+	background-color: #cccccc1a;
+	margin: 35px 0
+}
+
+.dropdown__icon {
+	width: 23px;
+	position: relative;
+	top: 2px;
+	height: 15px;
+	margin-right: 6px
+}
+
+.dropdown__items, .tooltip__content {
+	transition: .2s ease-in-out;
+	min-width: 100%;
+	top: calc(100% + 15px);
+	z-index: 40;
+	left: 50%;
+	transform: translateX(-50%);
+	max-height: 300px;
+	white-space: nowrap
+}
+
+.dropdown__items {
+	max-width: 100%;
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	line-height: 1.75rem;
+	text-align: left;
+	height: auto;
+	overflow: inherit;
+	overflow-x: auto
+}
+
+.linkBlock, .tooltip__content {
+	overflow: hidden;
+	text-align: left
+}
+
+.dropdown__items .dropdown__item, .dropdown__items a {
+	height: 100%;
+	display: block;
+	font-size: .875rem;
+	font-weight: 400
+}
+
+.dropdown {
+	cursor: pointer;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	outline: 0;
+	padding: 0 30px 0 10px;
+	position: relative
+}
+
+.dropdown.dropdown--full {
+	width: 100%;
+	max-width: 100%
+}
+
+.dropdown:after, .inputTextSubmit .button--noLabel:after {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(135deg);
+	content: "";
+	width: 8px;
+	height: 8px
+}
+
+.dropdown:after {
+	border-top: 1px solid #504d41;
+	border-right: 1px solid #504d41;
+	margin-left: 20px;
+	margin-top: -2px;
+	right: 10px
+}
+
+.dropdown__selected {
+	text-align: left;
+	white-space: nowrap;
+	font-size: .875rem
+}
+
+.inputTextSubmit .inputTextField {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	float: left;
+	width: 68%;
+	font-size: .875rem
+}
+
+.inputTextSubmit .inputTextField--fullWidth {
+	width: calc(100% - 40px)
+}
+
+.inputTextSubmit .button {
+	font-size: .875rem;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: right;
+	width: 32%;
+	text-align: center
+}
+
+.inputTextSubmit .button--noLabel {
+	width: 40px;
+	padding: 0
+}
+
+.inputTextSubmit .button--noLabel:after {
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	left: 50%;
+	margin-left: -6px;
+	margin-top: 2px;
+	transform: rotate(45deg) translate3d(-50%,-50%,0)
+}
+
+.inputTextField {
+	background: #fff;
+	color: #035066;
+	padding: 10px;
+	margin: 0;
+	border: 0;
+	height: 40px;
+	width: 100%;
+	-webkit-appearance: none;
+	border-radius: 2px
+}
+
+.inputTextField--fullWidth {
+	width: 100%
+}
+
+.inputTextField:disabled {
+	opacity: 1;
+	cursor: not-allowed
+}
+
+.linkBlock {
+	font-weight: 300;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	display: block;
+	margin-bottom: 20px
+}
+
+.linkBlock > h4, .linkBlock > p {
+	text-align-last: left;
+	float: left;
+	width: 100%
+}
+
+.linkBlock > h4 {
+	margin: 12px 0;
+	font-size: 1.125rem;
+	font-weight: 600
+}
+
+.linkBlock > p, .tooltip__content a {
+	font-weight: 400;
+	font-size: .875rem
+}
+
+.linkBlock > p {
+	line-height: 1.375rem;
+	display: inline-block
+}
+
+section:target::before, span:target::before {
+	content: "";
+	display: block;
+	height: 40px;
+	margin: -40px 0 0
+}
+
+.tooltip__content {
+	display: none;
+	position: absolute;
+	line-height: 1.75rem;
+	height: auto;
+	overflow: inherit;
+	overflow-x: auto
+}
+
+.socialMedia__icon {
+	border-radius: 50%;
+	margin-left: 10px;
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	background: top center no-repeat;
+	font-size: 2rem;
+	transition: .3s
+}
+
+.socialMedia__icon:hover {
+	box-shadow: 0 0 15px 5px #fff
+}
+
+.socialMedia__icon--twitter-round {
+	background-image: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/social-media/logo-x-round.svg?u7b62634f=)
+}
+
+.socialMedia__icon--youtube-round {
+	background-image: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/social-media/logo-youtube-round.svg?u7b62634f=)
+}
+
+.socialMedia__icon--facebook-round {
+	background-image: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/social-media/logo-facebook-round.svg?u7b62634f=)
+}
+
+.socialMedia__icon--instagram-round {
+	background-image: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/social-media/logo-instagram-round.svg?u7b62634f=)
+}
+
+.socialMedia__icon--tiktok-round {
+	background-image: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/social-media/logo-tiktok.svg?u7b62634f=)
+}
+
+.ie_warning {
+	display: none;
+	padding: 24px 40px;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	background-color: #fff0dd;
+	color: #5a2309;
+	max-height: 90px
+}
+
+.ie_warning_body {
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 16px
+}
+
+.ie_warning_content {
+	padding-left: 16px
+}
+
+.ie_warning_title {
+	font-size: 20px;
+	font-weight: 700
+}
+
+.ie_warning_icon {
+	font-size: 25px
+}
+
+.ie_warning_close_button {
+	font-size: 20px;
+	cursor: pointer
+}
+
+.header {
+	transition: .2s ease-in-out;
+	max-height: 74px;
+	border-bottom: 1px solid #eee9dd;
+	background-color: #fff
+}
+
+.header__toTop {
+	transition: .1s ease-in-out;
+	position: fixed;
+	width: 100%;
+	height: 4px;
+	z-index: 100;
+	box-shadow: 0 0 4px #999;
+	overflow: hidden;
+	text-align: center
+}
+
+.header__toTop > a {
+	text-decoration: none;
+	display: none;
+	color: #fff;
+	font-size: .875rem
+}
+
+.header__close {
+	transition: .2s ease-in-out;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: -80px;
+	right: 20px
+}
+
+.header__inner {
+	transition: .2s ease-in-out;
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.header__countrylanguage, .header__sites {
+	transition: .2s ease-in-out;
+	box-sizing: border-box;
+	max-height: 0;
+	height: auto;
+	overflow: hidden
+}
+
+.header__countrylanguage h4, .header__sites h4 {
+	text-align: left;
+	margin-bottom: 17px
+}
+
+.header__countrylanguage {
+	color: #504d41;
+	background-color: #fff
+}
+
+.sites__headline {
+	margin-bottom: 36px
+}
+
+.sites__site__img {
+	width: 100%;
+	margin-bottom: 25px;
+	background-size: cover
+}
+
+.sites__site__img:before {
+	display: block;
+	content: "";
+	padding-top: 56%
+}
+
+.logo {
+	display: block;
+	height: 70px;
+	background: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/logos/logo-luxairtours.svg?u7b62634f=) center center/70% no-repeat #fff
+}
+
+.nav, .nav__link__name {
+	background-color: #fff
+}
+
+.logo--logo {
+	width: 90%;
+	display: block;
+	margin: 10px auto auto
+}
+
+.nav__link--destinations .destinationContent, .switches_countrylanguage .dropdown .dropdown__selected span {
+	display: none
+}
+
+.nav, .nav__link {
+	height: 70px;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.nav {
+	text-align: justify;
+	-ms-flex-align: inherit;
+	align-items: inherit;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.nav__link {
+	font-weight: 400;
+	text-decoration: none;
+	color: #504d41;
+	font-size: 1rem;
+	padding: 0;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.nav__link--destinations .destinationContent .linkBlock, .nav__link--destinations .destinationContent .linkBlock h4 {
+	margin: 0
+}
+
+.nav__link--destinations .destinationContent .megadropdown__subline:not(:first-child) {
+	margin-top: 20px
+}
+
+.nav__link--destinations .destinationContent .linkBlock a {
+	line-height: 30px
+}
+
+.nav__link__name {
+	transition: .2s ease-in-out;
+	padding: 0 15px;
+	height: 70px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	cursor: pointer;
+	border-bottom: 4px solid #fff;
+	border-top: 4px solid #fff;
+	border-radius: 0;
+	width: 100%;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+
+.footer__menu, .footer__part {
+	border-bottom: 1px solid #fff6
+}
+
+.nav__link__content__close, .nav__link__inner {
+	transition: .2s ease-in-out;
+	position: absolute
+}
+
+.nav__link__inner {
+	display: none;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 71px;
+	z-index: 15
+}
+
+.nav__link__content__close {
+	width: 12px;
+	height: 12px;
+	right: 20px;
+	top: 20px;
+	cursor: pointer
+}
+
+.nav__link__content {
+	padding: 30px 100px
+}
+
+.nav__link__content.bgcolor-fuscousGray {
+	font-weight: 400;
+	color: #a7a6a0
+}
+
+.nav__link__content.bgcolor-fuscousGray a {
+	color: #fff;
+	text-decoration: underline
+}
+
+.nav__link__content h3 {
+	margin-top: 25px;
+	display: inline-block
+}
+
+.switches, .switches__contact {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: inherit;
+	align-items: inherit;
+	-ms-flex-pack: start;
+	justify-content: flex-start
+}
+
+.switches__contact {
+	-ms-flex-preferred-size: 65px;
+	flex-basis: 65px;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 40px;
+	width: 65px;
+	-ms-flex-pack: distribute;
+	justify-content: space-around
+}
+
+.switches__contact .tooltip__content {
+	text-align: center;
+	color: #000
+}
+
+.switches__contact .tooltip__content p {
+	font-size: .875rem;
+	line-height: 1.25em
+}
+
+.switches__contact .tooltip__content .button__inner {
+	margin-top: 1em;
+	display: inherit;
+	width: inherit
+}
+
+.switches__mail, .switches__phone {
+	position: relative;
+	height: 40px
+}
+
+.switches__mail .icon, .switches__phone .icon {
+	width: 18px;
+	height: 18px
+}
+
+.switches__mail, .switches__phone, .switches_countrylanguage, .switches_countrylanguage .dropdown {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.switches_countrylanguage {
+	transition: .3s ease-in-out;
+	cursor: pointer;
+	white-space: nowrap;
+	width: inherit;
+	top: inherit;
+	height: 40px;
+	position: relative;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	background-color: #fff;
+	left: inherit;
+	margin: 0
+}
+
+.switches_countrylanguage .dropdown {
+	background: 0 0;
+	border: 0;
+	padding-right: 0;
+	line-height: inherit;
+	height: inherit;
+	padding-left: 10px;
+	font-size: inherit
+}
+
+.switches_countrylanguage .dropdown .dropdown__selected .dropdown__icon {
+	top: 2px
+}
+
+.switches_countrylanguage .dropdown .dropdown__items {
+	max-width: initial
+}
+
+.footer {
+	position: relative;
+	overflow: hidden;
+	color: #fff
+}
+
+.footer:before {
+	content: "";
+	position: absolute;
+	top: 1px;
+	height: 90px;
+	margin: auto;
+	left: -90px;
+	right: -90px;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 0
+}
+
+.footer:before, .footer__container {
+	background: #ffb300
+}
+
+.footer__content {
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto
+}
+
+.footer__logo {
+	position: absolute;
+	top: 30px;
+	right: 35px;
+	width: 94px;
+	height: 24px;
+	background: url(https://www.luxair.lu/modules/proprietary/luxair_styleguide/build/images/logos/logos/logo-luxairtours-white.svg?u7b62634f=) center center no-repeat
+}
+
+.footer__menu {
+	padding: 30px 120px 30px 15px;
+	font-size: .875rem
+}
+
+.footer__menu__item {
+	float: left;
+	display: block;
+	padding: 0 20px
+}
+
+.footer__menu__item a {
+	color: #fff;
+	text-decoration: none
+}
+
+.footer__part {
+	border-top: 1px solid #fff6;
+	position: relative
+}
+
+.footer__part .payment_method .grid__cell {
+	min-width: 75px
+}
+
+.footer__part__info .topicBlock.col_1 {
+	margin-top: -15px;
+	padding: 0 80px 0 0
+}
+
+.footer__part__info .topicBlock.col_1 .button, .footer__part__info .topicBlock.col_1 .inputTextField {
+	height: 30px
+}
+
+.footer__part__info .topicBlock.col_2 {
+	padding: 0 80px
+}
+
+.footer__part__info .topicBlock.col_3 {
+	padding: 0 0 0 80px;
+	margin-top: -15px
+}
+
+.footer__part__info .topicBlock.col_3 .grid {
+	-ms-flex-pack: end;
+	justify-content: flex-end
+}
+
+.footer__part__content {
+	transition: .2s ease-in-out;
+	height: 0;
+	overflow: hidden
+}
+
+.footer__part.active .footer__part__content {
+	height: auto;
+	padding: 0;
+	margin: auto
+}
+
+.footer__link, a.footer__link {
+	color: #fff;
+	line-height: 1.5rem
+}
+
+.footer__copyRight {
+	font-size: .75rem;
+	padding-top: 30px;
+	padding-bottom: 0;
+	margin-bottom: -25px
+}
+
+.footer__links, .megadropdown__subline {
+	font-size: .875rem
+}
+
+.button .button__inner, .footer__links a, .header__sites, .sites__site__link {
+	color: #fff
+}
+
+.dropdown__items .dropdown__item:hover, .dropdown__items a:hover, .linkBlock, .linkBlock:hover, .nav__link a.nav__link__name:hover, .tooltip__content a:hover {
+	text-decoration: none
+}
+
+.dropdown:before, .tooltip:before {
+	display: none;
+	content: "";
+	position: absolute
+}
+
+.footer__menu::after, .inputTextSubmit::after, .linkBlock::after {
+	clear: both;
+	content: "";
+	display: table
+}
+
+:-ms-input-placeholder, ::-webkit-input-placeholder {
+	color: #aba594
+}
+
+:-moz-placeholder, ::-moz-placeholder {
+	color: #aba594;
+	opacity: 1
+}
+
+.footer__part__info, .ie_warning, .ie_warning_body {
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.nav__link--destinations .destinationContent .megadropdown__subline, .nav__link--destinations .destinationContent.active {
+	display: block
+}
+
+.footer__menu__item:before, .switches_countrylanguage .dropdown:after {
+	content: none
+}
+
+@media (min-width:0) {
+	.grid .grid__cell--xs-6 {
+		-ms-flex: auto;
+		flex: auto;
+		width: 50%
+	}
+
+	.grid .grid__cell--xs-12 {
+		-ms-flex: auto;
+		flex: auto;
+		width: 100%
+	}
+
+	h3 {
+		font-size: 22px;
+		line-height: 1.136em
+	}
+
+	h4 {
+		font-size: 18px;
+		line-height: 1.111em
+	}
+
+	.dropdown__items, .tooltip__content {
+		padding: 10px
+	}
+
+	.dropdown__items .dropdown__item, .dropdown__items a {
+		padding: 0 10px
+	}
+}
+
+@media (min-width:768px) {
+	.grid .grid__cell--s-4, .grid .grid__cell--s-6 {
+		-ms-flex: auto;
+		flex: auto;
+		width: 33.33333%
+	}
+
+	.grid .grid__cell--s-6 {
+		width: 50%
+	}
+
+	section {
+		padding: 0 40px
+	}
+
+	.luxair {
+		line-height: 1.375em
+	}
+}
+
+@media (min-width:1024px) {
+	h3 {
+		font-size: 24px;
+		line-height: 1.25em
+	}
+
+	h4 {
+		line-height: 1.222em
+	}
+
+	.dropdown__items, .tooltip__content {
+		padding: 20px
+	}
+
+	.header__inner {
+		padding-right: 50px
+	}
+
+	.logo {
+		background-image: none;
+		background-size: auto
+	}
+
+	:root {
+		--ld--primary-margin: 32px;
+		--ld--secondary-margin: 16px;
+		--ld--tertiary-margin: 12px
+	}
+}
+
+@media (min-width:1280px) {
+	h3 {
+		font-size: 28px
+	}
+
+	.switches {
+		text-align: right;
+		margin-right: 0;
+		width: inherit;
+		height: inherit
+	}
+}
+
+@media (min-width:0) and (max-width:767px) {
+	section {
+		padding: 0 20px
+	}
+
+	.luxair {
+		line-height: 1.25em
+	}
+
+	.inputTextField {
+		width: 100%
+	}
+
+	.nav__link__inner {
+		position: relative;
+		top: 0
+	}
+
+	.nav__link__content {
+		padding: 20px
+	}
+
+	.footer__logo {
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%
+	}
+
+	.footer__menu {
+		padding: 50px 0 0;
+		font-size: 1.125rem
+	}
+
+	.footer__menu__item {
+		float: none;
+		text-align: center;
+		margin-bottom: 30px
+	}
+
+	.footer__copyRight, .footer__links {
+		font-size: 1rem
+	}
+}
+
+@media (min-width:1024px) and (max-width:1279px) {
+	.nav__link__name {
+		padding: 0 8px
+	}
+}
+
+@media (min-width:768px) and (max-width:839px) {
+	.socialMedia__container {
+		padding: 0 2em
+	}
+}
+
+@media (min-width:0) and (max-width:1023px) {
+
+	.logo {
+		-ms-flex: initial;
+		flex: initial;
+		width: 100px;
+		background: url(/modules/proprietary/luxair_styleguide/build/images/logos/logos/logo-luxair.svg?u7c42e426=) 20px center no-repeat #fff
+	}
+}
+
+@media (min-width:0) and (max-width:1279px) {
+	.footer__part .payment_method {
+		-ms-flex-pack: center;
+		justify-content: center
+	}
+
+	.footer__part__info .topicBlock.col_1 {
+		padding: 0
+	}
+}
+
+@media (min-width:0) and (max-width:1439px) {
+	.footer__part__info .topicBlock.col_2, .footer__part__info .topicBlock.col_3 {
+		padding: 0
+	}
+
+	.footer__part__info .topicBlock.col_3 .grid {
+		-ms-flex-pack: center;
+		justify-content: center
+	}
+}
+
+body[data-theme=luxair] {
+	--ld-categories--color-primary: #0091b8;
+	--ld-categories--color-active: #026681
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+	:root {
+		--ld--primary-margin: 24px;
+		--ld--secondary-margin: 12px;
+		--ld--tertiary-margin: 8px
+	}
+}
+
+@media (max-width:767px) {
+	:root {
+		--ld--primary-margin: 16px;
+		--ld--secondary-margin: 12px;
+		--ld--tertiary-margin: 8px
+	}
+}
+
+body {
+	font-family: "Exo 2",sans-serif
+}
+
+*, :after, :before {
+	box-sizing: inherit
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+@media (min-width:576px) {
+	.container {
+		max-width: 540px
+	}
+}
+
+@media (min-width:768px) {
+	.container {
+		max-width: 720px
+	}
+}
+
+@media (min-width:992px) {
+	.container {
+		max-width: 960px
+	}
+}
+
+@media (min-width:1200px) {
+	.container {
+		max-width: 1140px
+	}
+}
+
+.luxair {
+	font: 400 16px "Exo 2",sans-serif
+}
+
+.luxair * {
+	font-style: normal !important;
+	font-weight: 400
+}
+
+.header .header__countrylanguage .sites__headline, .header .header__countrylanguage h4, .luxair a {
+	color: #035066
+}
+
+.bgcolor-pampas {
+	background-color: #f5f5f5
+}
+
+.bgcolor-fuscousGray {
+	background-color: #04242f
+}
+
+.button__inner {
+	border-radius: 0;
+	background-color: #035066;
+	color: #fff
+}
+
+.button__inner:hover {
+	background-color: #368399
+}
+
+.button__inner:disabled {
+	opacity: 1;
+	background: #b1c3ca
+}
+
+.dropdown {
+	z-index: auto !important
+}
+
+.dropdown:before, .tooltip:before {
+	border: 0;
+	background: #fff;
+	right: calc(50% - 5px);
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	bottom: -21px;
+	height: 10px;
+	width: 10px;
+	z-index: 41;
+	transform: rotate(-45deg)
+}
+
+.dropdown, .dropdown__items {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0
+}
+
+.horizontalLine {
+	background-color: #ccc
+}
+
+.inputTextSubmit .inputTextField, .tooltip__content {
+	border: 1px solid #ccc
+}
+
+.tooltip__content {
+	background-color: #fff;
+	border-radius: 0
+}
+
+.footer a, .header .sites__site__link, .header__toTop a, .tooltip__content a {
+	color: #fff
+}
+
+.footer {
+	margin-top: 60px;
+	padding-top: 0
+}
+
+.footer:before {
+	background-color: transparent
+}
+
+.footer__copyRight {
+	opacity: .4;
+	color: #fff
+}
+
+.footer__logo {
+	background-image: url(/modules/proprietary/luxair_styleguide/build/images/logos/logos/logo-luxair-white.svg?u7c42e426=)
+}
+
+.footer__part__content {
+	width: 60%
+}
+
+.header {
+	border-color: #ccc
+}
+
+.logo {
+	-ms-flex: 140px 0 0;
+	flex: 140px 0 0
+}
+
+.logo--logo {
+	margin-top: 15px
+}
+
+.logo.darksite--logo {
+	display: none
+}
+
+.nav__link__name, a.nav__link__name {
+	color: #0090b8
+}
+
+.nav__link__name:hover, a.nav__link__name:hover {
+	border-bottom: 4px solid #0090b8
+}
+
+.switches .icon--phone {
+	background-image: url(/modules/proprietary/luxair_styleguide/build/images/icons/global/lg/phone.svg?u7c42e426=)
+}
+
+.switches .icon--mail {
+	background-image: url(/modules/proprietary/luxair_styleguide/build/images/icons/global/lg/mail.svg?u7c42e426=)
+}
+
+.hdB--wrapper {
+	position: absolute;
+	background-color: #fff;
+	z-index: 100;
+	width: 100%;
+	height: 10px;
+	overflow: hidden
+}
+
+.hdB--base {
+	width: 90%;
+	height: 27px;
+	background: linear-gradient(to right,#0091b8,#fff)
+}
+
+.hdB--overlay, .red__container {
+	position: absolute;
+	height: 27px;
+	transition: left 1s
+}
+
+.hdB--overlay {
+	left: 77px;
+	z-index: 100;
+	width: 25%;
+	background-color: #0091b8;
+	background: linear-gradient(to right,#0091b8,#0091b8,transparent);
+	transform: skew(-50deg)
+}
+
+.red__container {
+	left: -60px;
+	overflow: hidden;
+	width: 150px
+}
+
+.hdB__red--start {
+	z-index: 0;
+	position: absolute;
+	height: 27px;
+	width: 40px;
+	background-color: #71020e
+}
+
+.hdB__red--base {
+	z-index: 20;
+	width: 91px;
+	transform: skew(-60deg);
+	background: linear-gradient(to right,#71020e 5%,#e2003b 70%)
+}
+
+.hdB__red--base, .white__1, .white__container {
+	position: absolute;
+	height: 27px
+}
+
+.white__container {
+	left: -60px;
+	overflow: hidden;
+	width: 200px;
+	transition: left 1s,width 1s
+}
+
+.white__1 {
+	left: 89px;
+	z-index: 47;
+	width: 30px;
+	background: linear-gradient(to right,#fff,transparent);
+	transform: skew(-55deg)
+}
+
+.white__11 {
+	position: absolute;
+	height: 12px;
+	top: 15px;
+	width: 7px;
+	z-index: 30;
+	left: 76px;
+	transform: skew(-63deg);
+	background-color: #fff
+}
+
+.white__2 {
+	position: absolute;
+	transform: skew(-46deg);
+	left: 133px;
+	height: 27px;
+	width: 51px;
+	z-index: 45;
+	background: linear-gradient(to right,transparent,#fff,transparent)
+}
+
+.white__3 {
+	position: absolute;
+	width: 0;
+	left: 149px;
+	height: 26px;
+	z-index: 41;
+	background: linear-gradient(to right,transparent,#ffccf5b3);
+	transform: skew(-65deg);
+	transition: width 1s
+}
+
+.white__4 {
+	position: absolute;
+	z-index: 44;
+	width: 20px;
+	left: 151px;
+	height: 10px;
+	top: 17px;
+	background: linear-gradient(to bottom,transparent,#fff);
+	transform: skew(-70deg)
+}
+
+.white__topBar, .white__topBarAbove {
+	position: absolute;
+	width: 70px;
+	z-index: 20;
+	transform: skew(-55deg)
+}
+
+.white__topBarAbove {
+	height: 7px;
+	left: 102px;
+	background: linear-gradient(#fff,#ffebfacc,#ffe0f5cc)
+}
+
+.white__topBar {
+	height: 25px;
+	left: 82px;
+	top: 7px;
+	background: linear-gradient(#ffe0f5cc,#ffe0f5b3,#ffe0f580,transparent)
+}
+
+.white__left {
+	position: absolute;
+	left: 90px;
+	transform: skew(-50deg);
+	width: 11px;
+	height: 27px;
+	z-index: 60;
+	background: linear-gradient(to right,#fff,transparent)
+}
+
+.footer__container, .header__toTop {
+	background-color: #0090b8
+}
+
+@media (min-width:0) and (max-width:767px) {
+	.footer__part__content {
+		width: 100%
+	}
+}
+
+@media (min-width:1024px) {
+	.logo {
+		background-image: none;
+		background-size: auto
+	}
+}
+
+@media only screen and (min-width:450px) {
+	.hdB--overlay {
+		left: 132px
+	}
+
+	.red__container {
+		left: -30px
+	}
+
+	.white__container {
+		left: -30px;
+		width: 250px
+	}
+}
+
+@media only screen and (min-width:800px) {
+	.hdB--overlay {
+		left: 194px;
+		transform: skew(-63deg)
+	}
+
+	.red__container {
+		left: 0
+	}
+
+	.white__container {
+		left: 0;
+		width: 300px
+	}
+
+	.white__3 {
+		width: 42px
+	}
+}
