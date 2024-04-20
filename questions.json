@@ -1,7 +1,7 @@
 {
 	"people": {
 		"type": "answers",
-		"weight": 2,
+		"weight": 1,
 		"question": "Who are you traveling with?",
 		"answers": [
 			{
@@ -24,7 +24,7 @@
 	},
 	"place": {
 		"type": "answers",
-		"weight": 3,
+		"weight": 4,
 		"question": "Where would you like to go?",
 		"answers": [
 			{
@@ -40,14 +40,27 @@
 		]
 	},
 	"temperature": {
-		"type": "slider",
-		"weight": 2,
+		"type": "answers",
+		"weight": 3,
 		"question": "What temperature should it be?",
-		"min": 0,
-		"max": 30,
-		"step": 1,
-		"range": 10,
-		"unit": "°C"
+		"answers": [
+			{
+				"id": "cold",
+				"text": "Cold"
+			},
+			{
+				"id": "mild",
+				"text": "Mild"
+			},
+			{
+				"id": "warm",
+				"text": "Warm"
+			},
+			{
+				"id": "hot",
+				"text": "Hot"
+			}
+		]
 	},
 	"activity": {
 		"type": "answers",
@@ -120,7 +133,7 @@
 	},
 	"price": {
 		"type": "slider",
-		"weight": 4,
+		"weight": 5,
 		"question": "What is your budget per person?",
 		"min": 0,
 		"max": 5050,
