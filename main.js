@@ -74,6 +74,10 @@ function displayQuestion() {
                 userAnswers[key] = answer.id;
                 answerContainer.innerHTML = "";
                 currentQuestion++;
+                if (key == "activity" && answer.id != "sport") {
+                    userAnswers["sport"] = "other";
+                    currentQuestion++;
+                }
                 if (currentQuestion < Object.entries(properties).length) {
                     displayQuestion();
                 }
